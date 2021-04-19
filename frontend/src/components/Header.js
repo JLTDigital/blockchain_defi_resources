@@ -3,7 +3,7 @@ import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap'
 
 const Header = () => {
   return (
-  <Navbar bg="danger" expand="lg">
+  <Navbar className="nav-text p-2 mt-3" variant='dark' expand="lg">
     <Container>
       <Navbar.Brand href="#home">Blockchain & DeFi Resources</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />

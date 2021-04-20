@@ -1,26 +1,57 @@
 import React from 'react'
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap'
+import { LinkContainer } from 'react-router-bootstrap'
 
 const Header = () => {
   return (
   <Navbar className="nav-text p-2 mt-3" variant='dark' expand="lg">
     <Container>
-      <Navbar.Brand href="#home">Blockchain & DeFi Resources</Navbar.Brand>
+      <LinkContainer to='/'>
+        <Navbar.Brand>Blockchain & DeFi Resources</Navbar.Brand>
+      </LinkContainer>
+
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
+        
         <Nav className="ml-auto">
-          <Nav.Link href="#home">Blockchain</Nav.Link>
-          <Nav.Link href="#link">Ethereum</Nav.Link>
-          <NavDropdown title="Dapps" id="basic-nav-dropdown">
-            <NavDropdown.Item href="#action/3.1">DeFi</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">NFT</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">Games</NavDropdown.Item>
+          <LinkContainer to='/blockchain'>
+            <Nav.Link>Blockchain</Nav.Link>
+          </LinkContainer>
+          <LinkContainer to='/ethereum'>
+            <Nav.Link>Ethereum</Nav.Link>
+          </LinkContainer>
+
+          <NavDropdown title="DeFi" id="basic-nav-dropdown">
+            <LinkContainer to='/defi'>
+              <NavDropdown.Item>DeFi</NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to='/dapps'>
+              <NavDropdown.Item>Dapps</NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to='/nft'>
+              <NavDropdown.Item>NFT</NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to='/games'>
+              <NavDropdown.Item>Games</NavDropdown.Item>
+            </LinkContainer>
           </NavDropdown>
-            <Nav.Link href="#home">Exchanges</Nav.Link>
-            <Nav.Link href="#link">Links</Nav.Link>
-            <Nav.Link href="#link">Literature</Nav.Link>
+
+          <LinkContainer to='/exchanges'>
+            <Nav.Link>Exchanges</Nav.Link>
+          </LinkContainer>
+          <LinkContainer to='/links'>
+            <Nav.Link>Links</Nav.Link>
+          </LinkContainer>
+          <LinkContainer to='/literature'>
+            <Nav.Link>Literature</Nav.Link>
+          </LinkContainer>
+          <LinkContainer to='/developer'>
             <Nav.Link href="#link">Developer</Nav.Link>
-            <Nav.Link href="#link">Wallets</Nav.Link>
+          </LinkContainer>
+          <LinkContainer to='/wallets'>
+            <Nav.Link>Wallets</Nav.Link>
+          </LinkContainer>
+
         </Nav>
       </Navbar.Collapse>
     </Container>

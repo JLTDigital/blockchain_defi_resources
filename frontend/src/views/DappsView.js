@@ -1,11 +1,11 @@
 import React from 'react'
 
-const WalletView = () => {
+const DappsView = () => {
   return (
     <div>
-      Wallet
+      Dapps
     </div>
   )
 }
 
-export default WalletView
+export default DappsView

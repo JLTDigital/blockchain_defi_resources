@@ -1,9 +1,10 @@
 import React from 'react'
+import Hero from '../components/Hero'
 
 const BlockchainView = () => {
   return (
     <div>
-      Blockchain
+      <Hero heading='Blockchains' para='What are they?' />
     </div>
   )
 }

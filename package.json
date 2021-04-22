@@ -7,8 +7,8 @@
   "scripts": {
     "start": "node backend/server",
     "server": "nodemon backend/server",
-    "client": "npm serve --prefix frontend",
-    "dev": "\"npm run server\" \"npm run client\""
+    "client": "npm run start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [
     "Blockchain",

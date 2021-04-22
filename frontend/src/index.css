@@ -47,3 +47,15 @@ main {
 .home-img {
   width: 50%;
 }
+
+.home-section-1 {
+  margin-top: 20px;
+}
+
+.home-section-2 {
+  margin-top: 20px;
+}
+
+.footer-img {
+  max-width: 10%;
+}

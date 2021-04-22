@@ -20,6 +20,9 @@ const Header = () => {
           <LinkContainer to='/ethereum'>
             <Nav.Link>Ethereum</Nav.Link>
           </LinkContainer>
+          <LinkContainer to='/web3'>
+            <Nav.Link>Web3</Nav.Link>
+          </LinkContainer>
 
           <NavDropdown title="DeFi" id="basic-nav-dropdown">
             <LinkContainer to='/defi'>
@@ -36,21 +39,24 @@ const Header = () => {
             </LinkContainer>
           </NavDropdown>
 
-          <LinkContainer to='/exchanges'>
-            <Nav.Link>Exchanges</Nav.Link>
-          </LinkContainer>
-          <LinkContainer to='/links'>
-            <Nav.Link>Links</Nav.Link>
-          </LinkContainer>
-          <LinkContainer to='/literature'>
-            <Nav.Link>Literature</Nav.Link>
-          </LinkContainer>
-          <LinkContainer to='/developer'>
-            <Nav.Link href="#link">Developer</Nav.Link>
-          </LinkContainer>
-          <LinkContainer to='/wallets'>
-            <Nav.Link>Wallets</Nav.Link>
-          </LinkContainer>
+          <NavDropdown title="Categories" id="basic-nav-dropdown">
+            <LinkContainer to='/exchanges'>
+              <NavDropdown.Item>Exchanges</NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to='/links'>
+              <NavDropdown.Item>Links</NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to='/literature'>
+              <NavDropdown.Item>Literature</NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to='/developer'>
+              <NavDropdown.Item href="#link">Developer</NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to='/wallets'>
+              <NavDropdown.Item>Wallets</NavDropdown.Item>
+            </LinkContainer>
+
+          </NavDropdown>
 
         </Nav>
       </Navbar.Collapse>

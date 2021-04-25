@@ -25,7 +25,6 @@ function App() {
         <Header />
           <main className='py-3'>
             <Container>
-              <Route path='/' component={HomeView} exact />
               <Route path='/blockchain' component={BlockchainView} exact />
               <Route path='/ethereum' component={EthereumView} exact />
               <Route path='/web3' component={Web3View} exact />
@@ -38,6 +37,7 @@ function App() {
               <Route path='/links' component={LinksView} exact />
               <Route path='/literature' component={LiteratureView} exact />
               <Route path='/wallets' component={WalletView} exact />
+              <Route path='/' component={HomeView} exact />
             </Container>
           </main>
         <Footer />

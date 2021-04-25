@@ -1,9 +1,10 @@
 import React from 'react'
+import Hero from '../components/Hero'
 
 const Web3View = () => {
   return (
     <div>
-      Web3
+      <Hero heading='Web3' para='What is Web3?' />
     </div>
   )
 }

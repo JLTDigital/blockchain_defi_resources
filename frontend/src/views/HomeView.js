@@ -16,15 +16,13 @@ const HomeView = () => {
       <section className='home-section-1'>
         <Row className='mt-2'>
           <Col md={6} className='p-4'>
-            <h2 style={{ color: '#03ffc5'}}>New to this space?</h2>
-            <p>Don't know what Blockchains are or how they work?</p>
-            <p>Don't understand what Ethereum is or what it does?</p>
-            <p>Interested in DeFi but don't know where to start?</p>
+            <h3 style={{ color: '#03ffc5'}}>New to this space?</h3>
+            <p>Don't know what Blockchains are or how they work? <br/>Don't understand what Ethereum is or what it does? <br/>Interested in DeFi but don't know where to start?</p>
             <br/>
             <p>Don't worry you can find all this information right here..</p>
           </Col>
           <Col md={6} className='p-4'>
-            <h2 style={{ color: '#03ffc5'}}>Information & links to get you started if your new to this space</h2>
+            <h3 style={{ color: '#03ffc5'}}>Information & links to get you started if your new to this space</h3>
             <p>If your new to this space have a look around and learn about blockchain technology, Ethereum and DeFi. Find some helpful links to applications, websites and materials that you can use to help you find your way around crypto world</p>
           </Col>
         </Row>
@@ -32,11 +30,11 @@ const HomeView = () => {
       <section className='home-section-2'>
       <Row className='mt-2'>
         <Col md={6} className='p-3'>
-          <h2 style={{ color: '#03ffc5'}}>Updates</h2>
+          <h3 style={{ color: '#03ffc5'}}>Updates</h3>
           <p>This site will be updated as frequently as possible with new information and links. This is a fast paced area with new protocols and projects emerging and evolving so keeping up will be tricky</p>
         </Col>
         <Col md={6} className='p-3'>
-          <h2 style={{ color: '#ff2a6d'}}>Remember...</h2>
+          <h3 style={{ color: '#ff2a6d'}}>Remember...</h3>
           <p>If you are engaging in a DeFi project, buying crypto currency or moving money between wallets, always ensure you are have researched and understand what you are doing. Please be aware that you should only carry out transactions with the genuine projects, smart contracts and wallet addresses. Make sure you know where your money is going.</p>
         </Col>
       </Row>

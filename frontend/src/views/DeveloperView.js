@@ -1,9 +1,11 @@
 import React from 'react'
+import Hero from '../components/Hero'
+
 
 const DeveloperView = () => {
   return (
     <div>
-      Dev
+      <Hero heading='Developers' para='Languages, tools and development resources to help ypu build your own Dapps and learn Blockchain development.' />
     </div>
   )
 }

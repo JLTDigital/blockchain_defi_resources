@@ -1,9 +1,11 @@
 import React from 'react'
+import Hero from '../components/Hero'
 
 const DappsView = () => {
   return (
     <div>
-      Dapps
+      <Hero heading='Dapps' para='Decentralised Applications' />
+
     </div>
   )
 }

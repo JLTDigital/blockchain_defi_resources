@@ -1,9 +1,10 @@
 import React from 'react'
+import Hero from '../components/Hero'
 
 const NftView = () => {
   return (
     <div>
-      NFT
+      <Hero heading='Non-Fungible Tokens (NFTs)' para='What are NFTs?' />
     </div>
   )
 }

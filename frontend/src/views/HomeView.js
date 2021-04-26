@@ -1,6 +1,8 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
 import BlockchainDeFiImg from '../assets/blockchainDefi.png'
+import Cyborg1 from '../assets/cyborg1.png'
+import Cyborg2 from '../assets/cyborg2.png'
 import { VFXImg } from 'react-vfx'
 import Hero from '../components/Hero'
 
@@ -16,28 +18,38 @@ const HomeView = () => {
       <section className='home-section-1'>
         <Row className='mt-2'>
           <Col md={6} className='p-4'>
-            <h3 style={{ color: '#03ffc5'}}>New to this space?</h3>
+            <h3 className='mt-2' style={{ color: '#03ffc5'}}>New to this space?</h3>
             <p>Don't know what Blockchains are or how they work? <br/>Don't understand what Ethereum is or what it does? <br/>Interested in DeFi but don't know where to start?</p>
             <br/>
             <p>Don't worry you can find all this information right here..</p>
           </Col>
-          <Col md={6} className='p-4'>
-            <h3 style={{ color: '#03ffc5'}}>Information & links to get you started if your new to this space</h3>
-            <p>If your new to this space have a look around and learn about blockchain technology, Ethereum and DeFi. Find some helpful links to applications, websites and materials that you can use to help you find your way around crypto world</p>
+          <Col md={6} className='p-4 text-center'>
+            <img className='home-section-img' src={Cyborg1} alt="New to this space."/>
           </Col>
         </Row>
       </section>
       <section className='home-section-2'>
-      <Row className='mt-2'>
-        <Col md={6} className='p-3'>
-          <h3 style={{ color: '#03ffc5'}}>Updates</h3>
-          <p>This site will be updated as frequently as possible with new information and links. This is a fast paced area with new protocols and projects emerging and evolving so keeping up will be tricky</p>
-        </Col>
-        <Col md={6} className='p-3'>
-          <h3 style={{ color: '#ff2a6d'}}>Remember...</h3>
-          <p>If you are engaging in a DeFi project, buying crypto currency or moving money between wallets, always ensure you are have researched and understand what you are doing. Please be aware that you should only carry out transactions with the genuine projects, smart contracts and wallet addresses. Make sure you know where your money is going.</p>
-        </Col>
-      </Row>
+        <Row className='mt-2 home-section-2'>
+          <Col md={6} className='p-4 text-center'>
+            <img className='home-section-img' src={Cyborg2} alt="New to this space."/>
+          </Col>
+          <Col md={6} className='p-4'>
+            <h3 className='mt-2' style={{ color: '#03ffc5'}}>Information & links to get you started if your new to this space</h3>
+            <p>If your new to this space have a look around and learn about blockchain technology, Ethereum and DeFi. Find some helpful links to applications, websites and materials that you can use to help you find your way around crypto world</p>
+          </Col>
+        </Row>
+      </section>
+      <section className='home-section-3 mt-2'>
+        <Row className='mt-2'>
+          <Col md={12} className='p-3'>
+            <h3 style={{ color: '#03ffc5'}}>Updates</h3>
+            <p>This site will be updated as frequently as possible with new information and links. This is a fast paced area with new protocols and projects emerging and evolving so keeping up will be tricky</p>
+          </Col> 
+          <Col md={12} className='p-3'>
+            <h3 style={{ color: '#ff2a6d'}}>Remember...</h3>
+            <p>If you are engaging in a DeFi project, buying crypto currency or moving money between wallets, always ensure you are have researched and understand what you are doing. Please be aware that you should only carry out transactions with the genuine projects, smart contracts and wallet addresses. Make sure you know where your money is going.</p>
+          </Col> 
+        </Row>
       </section>
     </div>
   )

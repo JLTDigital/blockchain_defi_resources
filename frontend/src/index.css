@@ -48,6 +48,10 @@ main {
   width: 50%;
 }
 
+.home-section-img {
+  width: 70%;
+}
+
 .home-section-1 {
   margin-top: 20px;
 }
@@ -58,4 +62,10 @@ main {
 
 .footer-img {
   max-width: 10%;
+}
+
+@media(max-width: 600px) {
+  .home-section-2 {
+    flex-direction: column-reverse;
+  }
 }

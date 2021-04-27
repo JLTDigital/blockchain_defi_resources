@@ -4,7 +4,7 @@ import BlockchainDeFiImg from '../assets/blockchainDefi.png'
 
 const Footer = () => {
   return (
-    <footer className='footer bg-light'>
+    <footer className='footer bg-light mt-3'>
       <Container>
         <Row className='py-2 text-center'>
           <Col md={6} className='p-2 mt-2 text-left'>

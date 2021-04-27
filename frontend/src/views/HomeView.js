@@ -18,28 +18,32 @@ const HomeView = () => {
       <section className='home-section-1'>
         <Row className='mt-2'>
           <Col md={6} className='p-4'>
-            <h3 className='mt-2' style={{ color: '#03ffc5'}}>New to this space?</h3>
-            <p>Don't know what Blockchains are or how they work? <br/>Don't understand what Ethereum is or what it does? <br/>Interested in DeFi but don't know where to start?</p>
-            <br/>
-            <p>Don't worry you can find all this information right here..</p>
+            <div className='wrapper'>
+              <h3 className='' style={{ color: '#03ffc5'}}>New to this space?</h3>
+              <p>Don't know what Blockchains are or how they work? <br/>Don't understand what Ethereum is or what it does? <br/>Interested in DeFi but don't know where to start?</p>
+              <br/>
+              <p>Don't worry you can find all this information right here..</p>
+            </div>
           </Col>
-          <Col md={6} className='p-4 text-center'>
+          <Col md={6} className='p-2 text-center'>
             <img className='home-section-img' src={Cyborg1} alt="New to this space."/>
           </Col>
         </Row>
       </section>
       <section className='home-section-2'>
         <Row className='mt-2 home-section-2'>
-          <Col md={6} className='p-4 text-center'>
+          <Col md={6} className='p-2 text-center'>
             <img className='home-section-img' src={Cyborg2} alt="New to this space."/>
           </Col>
           <Col md={6} className='p-4'>
-            <h3 className='mt-2' style={{ color: '#03ffc5'}}>Information & links to get you started if your new to this space</h3>
-            <p>If your new to this space have a look around and learn about blockchain technology, Ethereum and DeFi. Find some helpful links to applications, websites and materials that you can use to help you find your way around crypto world</p>
+            <div className='wrapper'>
+              <h3 className='mt-2' style={{ color: '#03ffc5'}}>Information & links to get you started if your new to this space</h3>
+              <p>If your new to this space have a look around and learn about blockchain technology, Ethereum and DeFi. Find some helpful links to applications, websites and materials that you can use to help you find your way around crypto world</p>
+            </div>
           </Col>
         </Row>
       </section>
-      <section className='home-section-3 mt-2'>
+      <section className='home-section-3 mt-5'>
         <Row className='mt-2'>
           <Col md={12} className='p-3'>
             <h3 style={{ color: '#03ffc5'}}>Updates</h3>

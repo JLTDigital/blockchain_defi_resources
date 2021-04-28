@@ -1,6 +1,6 @@
 import React from 'react'
 import Hero from '../components/Hero'
-import ListCard from '../components/ListCard'
+// import ListCard from '../components/ListCard'
 import { Row, Col } from 'react-bootstrap'
 
 
@@ -11,7 +11,7 @@ const ExchangesView = () => {
 
       <Row className='mt-3'>
         <Col className='p2' md={12}>
-          <ListCard />
+          
         </Col>
       </Row>
     </>

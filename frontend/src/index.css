@@ -73,20 +73,23 @@ main {
   min-height: 200px;
 }
 
+.card-link {
+  display: flex;
+}
+
 .main-card h3 {
   color: #03ffc5;
 }
 
 .main-card img {
-  width: 15%;
+  width: 20%;
 }
 
 .card-wrapper {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: 40px;
 }
-
 
 
 @media(max-width: 600px) {

@@ -99,7 +99,12 @@ main {
 }
 
 @media(max-width: 1024px) {
-  .main-card img {
+  /* .main-card img {
     display: none;
+  } */
+
+  .card-link {
+    display: flex;
+    flex-direction: column;
   }
 }

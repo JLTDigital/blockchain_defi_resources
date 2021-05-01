@@ -39,7 +39,4 @@ const ExchangesView = () => {
   )
 }
 
-
-
-
 export default ExchangesView

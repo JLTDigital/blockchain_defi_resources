@@ -30,7 +30,7 @@ app.get('/api', (req, res) => {
   res.send('API is active...')
 })
 
-app.use('/api/dapps', dappsRoutes)
+app.use('/api/defi', dappsRoutes)
 app.use('/api', developerRoutes)
 app.use('/api', exchangesRoutes)
 app.use('/api', linksRoutes)

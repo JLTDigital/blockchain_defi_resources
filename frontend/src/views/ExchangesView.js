@@ -3,7 +3,6 @@ import axios from 'axios'
 import Hero from '../components/Hero'
 import Loader from '../components/Loader'
 import Message from '../components/Message'
-import ExchangeListCard from '../components/ExchangeListCard'
 import { Row, Col } from 'react-bootstrap'
 
 const ExchangesView = () => {
@@ -15,8 +14,8 @@ const ExchangesView = () => {
     getExchanges()
   }, [])
   
-  const getExchanges = () => {
-    axios.get('/api/exchanges')
+  const getExchanges = async () => {
+    await axios.get('/api/exchanges')
     .then(response => response.data)
     .then(data => setExchanges(data))
     .catch(error => setError(error))
@@ -29,7 +28,15 @@ const ExchangesView = () => {
         <Row className='mt-3'>
           {exchanges.map(exchange => (
             <Col key={exchange._id} className='p2' md={12}>
-              <ExchangeListCard exchange={exchange} />
+              <div className='main-card mt-5 mb-3 p-2'>
+                <a href={exchange.url} className='card-link'>
+                  <img className='mr-3' src={exchange.image} alt=""/>
+                  <div className='card-wrapper'>
+                    <h3>{exchange.name}</h3>
+                    <p>{exchange.description}</p>
+                  </div>
+                </a>
+              </div>
             </Col>  
           ))}
         </Row>

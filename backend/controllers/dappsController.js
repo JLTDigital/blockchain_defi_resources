@@ -2,9 +2,9 @@ import asyncHandler from 'express-async-handler'
 import Dapps from '../schema/Dapps.js'
 
 // @desc - Get all apps with DeFi Category
-// @route - GET /api/dapps/defi
+// @route - GET /api/dapps/dapps
 // @access - public
-export const getDefi = asyncHandler(async (req, res) => {
+export const getDapps = asyncHandler(async (req, res) => {
   const defi = await Dapps.find({ category: 'DeFi' })
 
   if (defi) {

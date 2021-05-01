@@ -1,10 +1,47 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Hero from '../components/Hero'
+import axios from 'axios'
+import Loader from '../components/Loader'
+import Message from '../components/Message'
+import { Row, Col } from 'react-bootstrap'
 
 const WalletView = () => {
+
+  const [wallets, setWallets] = useState([])
+  const [error, setError] = useState('')
+
+  useEffect(() => {
+    getWallets()
+  }, [])
+  
+  const getWallets = async () => {
+    await axios.get('/api/wallets')
+    .then(response => response.data)
+    .then(data => setWallets(data))
+    .catch(error => setError(error))
+  }
+
   return (
     <div>
       <Hero heading='Wallets' para='The best hardware and software wallets.' />
+      {!wallets ? (<Loader />) : (
+        <Row className='mt-3'>
+          {wallets.map(wallet => (
+            <Col key={wallet._id} className='p2' md={12}>
+              <div className='main-card mt-5 mb-3 p-2'>
+                <a href={wallet.url} className='card-link'>
+                  <img className='mr-3' src={wallet.image} alt=""/>
+                  <div className='card-wrapper'>
+                    <h3>{wallet.name}</h3>
+                    <p>{wallet.description}</p>
+                  </div>
+                </a>
+              </div>
+            </Col>  
+          ))}
+        </Row>
+       )}
+       {error ? (<Message>{error}</Message>) : ''}
     </div>
   )
 }

@@ -19,6 +19,9 @@ const literatureSchema = new Schema({
     type: String,
     required: true
   },
+  image: {
+    type: String
+  }
 })
 
 const Literature = mongoose.model('Literature', literatureSchema)

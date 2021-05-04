@@ -18,7 +18,8 @@ const developerSchema = new Schema({
   category: {
     type: String,
     required: true
-  }
+  },
+  image: String
 })
 
 const Developer = mongoose.model('Developer', developerSchema)

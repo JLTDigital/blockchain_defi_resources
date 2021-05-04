@@ -39,7 +39,7 @@ const dapps = [
     description: "Defi suite for automated Yield farming.",
     url: "https://autofarm.network/",
     category: "DeFi",
-    image: "https://blockchaindefiresources.s3.eu-west-2.amazonaws.com/autofarm.png"
+    image: "https://blockchaindefiresources.s3.eu-west-2.amazonaws.com/autoFarmLogo.png"
   },
   {
     name: "CryptoVoxels",
@@ -73,21 +73,21 @@ const dapps = [
     name: "Aavegotchi",
     description: "AAavegotchi is a DeFi-enabled crypto collectibles game developed by Singapore-based Pixelcraft Studios that allows players to stake Non-fungible tokens (NFTs) avatars with interest-generating aTokens and interact with the Aavegotchi metaverse. It is a unique combination of Decentralized Finance (DeFi) and NFTs",
     url: "https://aavegotchi.com/",
-    category: "Games, NFT",
+    category: "Games",
     image: "https://blockchaindefiresources.s3.eu-west-2.amazonaws.com/aavegotchi.png"
   },
   {
     name: "Rarable",
     description: "Rarible is a software allowing digital artists and creators to issue and sell custom crypto assets that represent ownership in their digital work",
     url: "https://rarible.com/",
-    category: "NFT, Marketplace",
+    category: "NFT",
     image: "https://blockchaindefiresources.s3.eu-west-2.amazonaws.com/rarable.jpg"
   },
   {
     name: "Opensea",
     description: "The world’s largest digital marketplace for crypto collectibles and non-fungible tokens (NFTs), including ERC721 and ERC1155 assets. Buy, sell, and discover exclusive digital assets like Axies, ENS names, CryptoKitties, Decentraland, and more",
     url: "https://opensea.io/",
-    category: "NFT, Marketplace",
+    category: "NFT",
     image: "https://blockchaindefiresources.s3.eu-west-2.amazonaws.com/opensea.jpg"
   },
   {
@@ -108,7 +108,7 @@ const dapps = [
     name: "Marble Cards",
     description: "MarbleCards is a platform for collecting internet content and measuring its value. Any unique web page URL can be marbled into a collectible card on Ethereum but only once and by one collector.",
     url: "https://marble.cards/",
-    category: "NFT, Games",
+    category: "NFT",
     image: "https://blockchaindefiresources.s3.eu-west-2.amazonaws.com/marblecards.png"
   }
 ]

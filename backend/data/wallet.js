@@ -17,7 +17,7 @@ const wallet = [
     name: "Trezor Model T",
     description: "The Trezor Model T is an advanced cryptocurrency hardware wallet, designed to be the master access key to all your digital assets. Store and encrypt your Bitcoin public keys, passwords and other digital tokens with confidence.",
     url: "https://trezor.io/",
-    image: "https://blockchaindefiresources.s3.eu-west-2.amazonaws.com/trezormodelt.jpg",
+    image: "https://blockchaindefiresources.s3.eu-west-2.amazonaws.com/trezorModelt.png",
     category: "Wallets"
   },
   {

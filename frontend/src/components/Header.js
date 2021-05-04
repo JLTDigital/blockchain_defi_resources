@@ -4,7 +4,7 @@ import { LinkContainer } from 'react-router-bootstrap'
 
 const Header = () => {
   return (
-  <Navbar className="nav-text p-2 mt-3" variant='dark' expand="lg">
+  <Navbar className="nav-text p-2 mt-3" variant='dark' expand="lg" collapseOnSelect="true">
     <Container className='px-3'>
       <LinkContainer to='/'>
         <Navbar.Brand className='nav-brand'>Blockchain & DeFi <br/> Resources</Navbar.Brand>

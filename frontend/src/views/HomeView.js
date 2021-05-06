@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, Row } from 'react-bootstrap'
+import { Col, Row, Alert } from 'react-bootstrap'
 import BlockchainDeFiImg from '../assets/blockchainDefi.png'
 import Cyborg1 from '../assets/cyborg1.png'
 import Cyborg2 from '../assets/cyborg2.png'
@@ -46,12 +46,16 @@ const HomeView = () => {
       <section className='home-section-3 mt-5'>
         <Row className='mt-2'>
           <Col md={12} className='p-3'>
-            <h3 style={{ color: '#03ffc5'}}>Updates</h3>
-            <p>This site will be updated as frequently as possible with new information and links. This is a fast paced area with new protocols and projects emerging and evolving so keeping up will be tricky</p>
+            <Alert className='p-3' variant='success' >
+              <h3 style={{ color: '#000'}}>Updates</h3>
+              <p style={{ color: '#000'}}>This site will be updated as frequently as possible with new information and links. This is a fast paced area with new protocols and projects emerging and evolving so keeping up will be tricky</p>
+            </Alert>
           </Col> 
           <Col md={12} className='p-3'>
-            <h3 style={{ color: '#ff2a6d'}}>Remember...</h3>
-            <p>If you are engaging in a DeFi project, buying crypto currency or moving money between wallets, always ensure you are have researched and understand what you are doing. Please be aware that you should only carry out transactions with the genuine projects, smart contracts and wallet addresses. Make sure you know where your money is going.</p>
+            <Alert className='p-3' variant='danger'>
+              <h3 style={{ color: '#000'}}>Remember...</h3>
+              <p style={{ color: '#000'}}>If you are engaging in a DeFi project, buying crypto currency or moving money between wallets, always ensure you are have researched and understand what you are doing. Please be aware that you should only carry out transactions with the genuine projects, smart contracts and wallet addresses. Make sure you know where your money is going.</p>
+            </Alert>
           </Col> 
         </Row>
       </section>

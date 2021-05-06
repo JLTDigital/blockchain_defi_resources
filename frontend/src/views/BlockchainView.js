@@ -7,14 +7,16 @@ const BlockchainView = () => {
     <div>
       <Hero heading='Blockchains' para='What are they?' />
 
-      <section>
-        <Row>
-          <Col>
-          
+      <Row className='mt-2'>
+          <Col md={12} className='p-4'>
+            <div className='wrapper'>
+              <h3 style={{ color: '#03ffc5'}}>What is a Blockchain</h3>
+              <p>
+              A blockchain is a type of distributed ledger technology (DLT) where a digital ledger records transactions across an entire network that is linked to a particular blockchain. The digital information is stored in the block and distributed across the network like a chain, in a way that it can’t be changed or hacked. A record of each transaction on the blockchain is publicly recorded to the ledger of every participant.
+              </p>
+            </div>
           </Col>
         </Row>
-      </section>
-      
     </div>
   )
 }

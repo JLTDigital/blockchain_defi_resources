@@ -91,6 +91,9 @@ main {
   margin-top: 40px;
 }
 
+.ethereum {
+  width: 20%;
+}
 
 @media(max-width: 600px) {
   .home-section-2 {

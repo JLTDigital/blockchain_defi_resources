@@ -92,7 +92,7 @@ main {
 }
 
 .ethereum {
-  width: 15%;
+  max-width: 20%;
 }
 
 @media(max-width: 600px) {

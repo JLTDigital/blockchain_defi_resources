@@ -16,7 +16,7 @@ const EthereumView = () => {
       </Row>
 
       <Row className='mt-1'>
-          <Col md={12} className='p-3'>
+          <Col md={12} className='p-2'>
             <div className='wrapper'>
               <h3 style={{ color: '#03ffc5'}}>Ethereum</h3>
               <p>

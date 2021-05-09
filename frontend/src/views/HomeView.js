@@ -48,7 +48,7 @@ const HomeView = () => {
           <Col md={12} className='p-3'>
             <Alert className='p-3' variant='success' >
               <h3 style={{ color: '#000'}}>Updates</h3>
-              <p style={{ color: '#000'}}>This site will be updated as frequently as possible with new information and links. This is a fast paced area with new protocols and projects emerging and evolving so keeping up will be tricky</p>
+              <p style={{ color: '#000'}}>This site will be updated as frequently as possible with new information and links. Please note this will not be an exhustive list containing every project and token in the space. The goal is to give you solid information so that you can find your way to start with. It is then up to you to dig deeper and learn.</p>
             </Alert>
           </Col> 
           <Col md={12} className='p-3'>

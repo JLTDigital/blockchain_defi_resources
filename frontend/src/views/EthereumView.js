@@ -20,7 +20,7 @@ const EthereumView = () => {
             <div className='wrapper'>
               <h3 style={{ color: '#03ffc5'}}>Ethereum</h3>
               <p>
-              A blockchain is a type of distributed ledger technology (DLT) where a digital ledger records transactions across an entire network that is linked to a particular blockchain. The digital information is stored in the block and distributed across the network like a chain, in a way that it can’t be changed or hacked. A record of each transaction on the blockchain is publicly recorded to the ledger of every participant.
+              Ethereum is an open-source, blockchain-based, decentralized platform that is used for its own cryptocurrency, Ether, as well as enabling the use of Smart Contracts and Distributed Applications (ĐApps) to be built and run without any downtime, fraud, control, or interference from a third party.
               </p>
             </div>
           </Col>

@@ -99,6 +99,10 @@ main {
   .home-section-2 {
     flex-direction: column-reverse;
   }
+
+  .footer-title {
+    
+  }
 }
 
 @media(max-width: 1024px) {

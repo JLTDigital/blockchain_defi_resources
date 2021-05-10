@@ -7,7 +7,6 @@ import Footer from './components/Footer'
 import HomeView from './views/HomeView'
 import BlockchainView from './views/BlockchainView'
 import EthereumView from './views/EthereumView'
-import Web3View from './views/Web3View'
 import DappsView from './views/DappsView'
 import DefiView from './views/DefiView'
 import DeveloperView from './views/DeveloperView'
@@ -27,7 +26,6 @@ function App() {
             <Container>
               <Route path='/blockchain' component={BlockchainView} exact />
               <Route path='/ethereum' component={EthereumView} exact />
-              <Route path='/web3' component={Web3View} exact />
               <Route path='/dapps' component={DappsView} exact />
               <Route path='/defi' component={DefiView} exact />
               <Route path='/games' component={GamesView} exact />

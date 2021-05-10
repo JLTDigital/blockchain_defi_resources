@@ -20,9 +20,6 @@ const Header = () => {
           <LinkContainer to='/ethereum'>
             <Nav.Link>Ethereum</Nav.Link>
           </LinkContainer>
-          <LinkContainer to='/web3'>
-            <Nav.Link>Web3</Nav.Link>
-          </LinkContainer>
 
           <NavDropdown title="DeFi" id="basic-nav-dropdown">
             <LinkContainer to='/defi'>

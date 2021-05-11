@@ -5,7 +5,7 @@ import { Col, Row } from 'react-bootstrap'
 const BlockchainView = () => {
   return (
     <div>
-      <Hero heading='Blockchains' para='What are they?' />
+      <Hero heading='Blockchains' />
 
       <Row className='mt-2'>
           <Col md={12} className='p-4'>

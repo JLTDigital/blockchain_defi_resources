@@ -20,11 +20,12 @@ const Header = () => {
           <LinkContainer to='/ethereum'>
             <Nav.Link>Ethereum</Nav.Link>
           </LinkContainer>
+          <LinkContainer to='/defi'>
+          <Nav.Link>DeFi</Nav.Link>
+          </LinkContainer>
+          
 
-          <NavDropdown title="DeFi" id="basic-nav-dropdown">
-            <LinkContainer to='/defi'>
-              <NavDropdown.Item>DeFi</NavDropdown.Item>
-            </LinkContainer>
+          <NavDropdown title="Apps" id="basic-nav-dropdown">
             <LinkContainer to='/dapps'>
               <NavDropdown.Item>Dapps</NavDropdown.Item>
             </LinkContainer>

@@ -16,12 +16,12 @@ const Footer = () => {
             <small>Built by JLTDigital - Fullstack Developer</small>
             <br/>
             <small>Any issues with any links: <a href="https://github.com/JLTDigital/blockchain_defi_resources">
-              <BiLinkExternal color='#FF2E93' />
+              <BiLinkExternal color='#000' />
             </a> 
             </small>
             <br/>
             <small>Contact me: <a href="http://jlt.digital">
-            <BiEnvelopeOpen color='#FF2E93' />
+            <BiEnvelopeOpen color='#000' />
             </a>
             </small>
           </Col>

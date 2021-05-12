@@ -17,15 +17,14 @@ const Header = () => {
           <LinkContainer to='/blockchain'>
             <Nav.Link>Blockchain</Nav.Link>
           </LinkContainer>
-          <LinkContainer to='/ethereum'>
-            <Nav.Link>Ethereum</Nav.Link>
-          </LinkContainer>
           <LinkContainer to='/defi'>
           <Nav.Link>DeFi</Nav.Link>
-          </LinkContainer>
-          
+          </LinkContainer>      
 
-          <NavDropdown title="Apps" id="basic-nav-dropdown">
+          <NavDropdown title="Ethereum" id="basic-nav-dropdown">
+          <LinkContainer to='/ethereum'>
+            <NavDropdown.Item>Ethereum</NavDropdown.Item>
+          </LinkContainer>
             <LinkContainer to='/dapps'>
               <NavDropdown.Item>Dapps</NavDropdown.Item>
             </LinkContainer>

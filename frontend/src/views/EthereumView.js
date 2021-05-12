@@ -49,6 +49,22 @@ const EthereumView = () => {
               </p>
             </div>
           </Col>
+          <Col md={12} className='p-4'>
+            <div className='wrapper'>
+              <h3 style={{ color: '#03ffc5'}}>Dapps</h3>
+              <p>
+              Ethereum supports Smart Contracts and they are one of the cornestones of the platform. A smart contract is a self-executing contract with the terms of the agreement between buyer and seller being directly written into lines of code. The code and the agreements contained therein exist across a distributed, decentralized blockchain network, which in this case is the Ethereum blockchain.
+              </p>
+            </div>
+          </Col>
+          <Col md={12} className='p-4'>
+            <div className='wrapper'>
+              <h3 style={{ color: '#03ffc5'}}>Non-Fungible Tokens (NFTs)</h3>
+              <p>
+              Ethereum supports Smart Contracts and they are one of the cornestones of the platform. A smart contract is a self-executing contract with the terms of the agreement between buyer and seller being directly written into lines of code. The code and the agreements contained therein exist across a distributed, decentralized blockchain network, which in this case is the Ethereum blockchain.
+              </p>
+            </div>
+          </Col>
         </Row>
     </div>
   )

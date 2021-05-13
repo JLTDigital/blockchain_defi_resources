@@ -1,6 +1,7 @@
 import React from 'react'
 import Hero from '../components/Hero'
-import { Row, Col } from 'react-bootstrap'
+import DeFi from '../assets/Defi.jpeg'
+import { Row, Col, Card } from 'react-bootstrap'
 
 const DefiView = () => {
   return (
@@ -26,20 +27,82 @@ const DefiView = () => {
           </Col>
           <Col md={12} className='p-4'>
             <div className='wrapper'>
+              <h3 style={{ color: '#03ffc5'}}>What can DeFi be used for</h3>
+              <ul>
+                <li>
+                Borrowing and lending services
+                </li>
+                <li>
+                Banking services
+                </li>
+                <li>
+                Marketplaces and exchanges
+                </li>
+              </ul>
+            </div>
+          </Col>
+          <Col md={12} className='p-4'>
+            <div className='wrapper'>
               <h3 style={{ color: '#03ffc5'}}>Advantages of DeFi</h3>
-              <p>
-              Ethereum supports Smart Contracts and they are one of the cornestones of the platform. A smart contract is a self-executing contract with the terms of the agreement between buyer and seller being directly written into lines of code. The code and the agreements contained therein exist across a distributed, decentralized blockchain network, which in this case is the Ethereum blockchain.
-              </p>
+              <ul>
+                <li>
+                DeFi applications do not need any intermediaries or arbitrators as the code they are written in acts to resolve all possible disputes
+                </li>
+                <li>
+                Single points of failure are eliminated due to the dectranlised nature of using a P2P based system.
+                </li>
+                <li>
+                As data is recorded on blockchains and spread across thousands of nodes, shutdowning or cencoring anything becomes extremly difficult if not imposible
+                </li>
+                <li>
+                Due to the open ecosystem it makes it easy for everyone to access the services. This is especially important for people who may not have access to other financial services
+                </li>
+              </ul>
             </div>
           </Col>
           <Col md={12} className='p-4'>
             <div className='wrapper'>
               <h3 style={{ color: '#03ffc5'}}>Disadvantages of DeFi</h3>
-              <p>
-              Ethereum supports Smart Contracts and they are one of the cornestones of the platform. A smart contract is a self-executing contract with the terms of the agreement between buyer and seller being directly written into lines of code. The code and the agreements contained therein exist across a distributed, decentralized blockchain network, which in this case is the Ethereum blockchain.
-              </p>
+              <ul>
+                <li>
+                  Due to the nature of blockchains transactions are irreversible and any errors within the code of smart contracts will cause problems, especially given that they cannot be changed once they have been deployed to a blockchain
+                </li>
+                <li>
+                  Scalability can be a big problem. Transactions take a long time to process as well as being very extremely expensive at times of congestion on the network
+                </li>
+                <li>
+                  Vulnerability linked to Smart contracts. If there is a slight flaw in the code of a smart contract, it can lead to loss of funds
+                </li>
+                <li>
+                  Liquidity issues. The amount of money in DeFi projects is still small compared to the traditional financial system
+                </li>
+                <li>
+                  There is no real insurance. As insurance will protect investors in the event of a hacks or other fraudulent activities. Not having this cover could be problematic if something goes wrong
+                </li>
+              </ul>
             </div>
           </Col>
+
+          <Row className='mt-2'>
+            <Col md={12} className='p-4 text-center'>
+              <div className='wrapper'>
+                <h3 style={{ color: '#03ffc5'}}>Check out my article on Medium for a more information on DeFi</h3>
+              </div>
+            </Col>
+            <Col className='p-4 mx-auto'>
+              <Card style={{ width: '18rem' }}>
+                <a href="https://johnny-taft.medium.com/defi-b102486a216c">
+                  <Card.Img variant="top" src={DeFi}/>
+                  <Card.Body>
+                    <Card.Title>DeFi</Card.Title>
+                    <Card.Text style={{ color: '#000'}}>
+                      The Decentralised Finance future is starting now…
+                    </Card.Text>
+                  </Card.Body>
+                </a>
+              </Card> 
+            </Col>
+          </Row>
         </Row>
 
     </div>

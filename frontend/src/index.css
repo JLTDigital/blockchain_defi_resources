@@ -19,6 +19,10 @@ small {
   color: #000;
 }
 
+ul {
+  color: #fff;
+}
+
 main {
   min-height: 80vh;
 }

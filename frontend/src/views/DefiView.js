@@ -89,18 +89,20 @@ const DefiView = () => {
                 <h3 style={{ color: '#03ffc5'}}>Check out my article on Medium for a more information on DeFi</h3>
               </div>
             </Col>
-            <Col className='p-4 mx-auto'>
-              <Card style={{ width: '18rem' }}>
-                <a href="https://johnny-taft.medium.com/defi-b102486a216c">
-                  <Card.Img variant="top" src={DeFi}/>
-                  <Card.Body>
-                    <Card.Title>DeFi</Card.Title>
-                    <Card.Text style={{ color: '#000'}}>
-                      The Decentralised Finance future is starting now…
-                    </Card.Text>
-                  </Card.Body>
-                </a>
-              </Card> 
+            <Col md={12} className='p-4'>
+              <div className="card-wrapper align-items-center">
+                <Card style={{ width: '18rem' }}>
+                  <a href="https://johnny-taft.medium.com/defi-b102486a216c">
+                    <Card.Img variant="top" src={DeFi}/>
+                    <Card.Body>
+                      <Card.Title>DeFi</Card.Title>
+                      <Card.Text style={{ color: '#000'}}>
+                        The Decentralised Finance future is starting now…
+                      </Card.Text>
+                    </Card.Body>
+                  </a>
+                </Card> 
+              </div>
             </Col>
           </Row>
         </Row>

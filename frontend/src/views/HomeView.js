@@ -1,5 +1,6 @@
 import React from 'react'
 import { Col, Row, Alert } from 'react-bootstrap'
+import { LinkContainer } from 'react-router-bootstrap'
 import BlockchainDeFiImg from '../assets/blockchainDefi.png'
 import Cyborg1 from '../assets/cyborg1.png'
 import Cyborg2 from '../assets/cyborg2.png'
@@ -9,7 +10,7 @@ import Hero from '../components/Hero'
 const HomeView = () => {
   return (
     <div>
-      <Hero heading={'Blockchain & DeFi Resources'} para='A site to guide & inform. Find your way in the Blockchain and DeFi space.'/>
+      <Hero heading={'Blockchain & DeFi Resources'} para='Find your way in the Blockchain and DeFi space.'/>
       <Row>
         <Col className='p-2 mx-auto text-center'>
           <VFXImg shader='rgbGlitch' className='home-img' src={BlockchainDeFiImg} alt="Blockchain & DeFi"/>
@@ -30,8 +31,9 @@ const HomeView = () => {
           </Col>
         </Row>
       </section>
+
       <section className='home-section-2'>
-        <Row className='mt-2 home-section-2'>
+        <Row className='home-section-2'>
           <Col md={6} className='p-2 text-center'>
             <img className='home-section-img' src={Cyborg2} alt="New to this space."/>
           </Col>
@@ -43,16 +45,50 @@ const HomeView = () => {
           </Col>
         </Row>
       </section>
+
       <section className='home-section-3 mt-5'>
-        <Row className='mt-2'>
-          <Col md={12} className='p-3'>
-            <Alert className='p-3' variant='success' >
+        <h3 className='text-center'>Get Started...</h3>
+        <Row className='p-3'>
+          <Col md={4}>
+            <div className="home-card">
+              <h6>1. Get some Crypto</h6>
+              <p>Visit one these exchanges and purchase your cryptocurrency.</p>
+              <LinkContainer to='/exchanges'>
+                <button className='btn btn-danger home-link'>Exchanges</button>
+              </LinkContainer>
+            </div>
+          </Col>
+          <Col md={4}>
+            <div className="home-card">
+              <h6>2. Get a wallet</h6>
+              <p>Get a hardsware or software wallet to hold your tokens.</p>
+              <LinkContainer to='/wallets'>
+                <button className='btn btn-danger home-link'>Wallets</button>
+              </LinkContainer>
+            </div>
+          </Col>
+          <Col md={4}>
+            <div className="home-card">
+              <h6>3. Get stuck in</h6>
+              <p>Vist some of these applications and have a look around</p>
+              <LinkContainer to='/dapps'>
+                <button className='btn btn-danger home-link'>Apps</button>
+              </LinkContainer>
+            </div>
+          </Col>
+        </Row>
+      </section>
+
+      <section className='home-section-4 mt-5'>
+        <Row>
+          <Col md={6} className='p-3'>
+            <Alert style={{ background: '#03ffc5'}} className='p-5'>
               <h4 style={{ color: '#000'}}>Updates</h4>
               <p style={{ color: '#000'}}>This site will be updated as frequently as possible with new information and links. Please note this will not be an exhustive list containing every project and token in the space. The goal is to give you solid information so that you can find your way to start with. It is then up to you to dig deeper and learn.</p>
             </Alert>
           </Col> 
-          <Col md={12} className='p-3'>
-            <Alert className='p-3' variant='danger'>
+          <Col md={6} className='p-3'>
+            <Alert style={{ background: '#FF2A6D'}} className='p-5'>
               <h4 style={{ color: '#000'}}>Remember...</h4>
               <p style={{ color: '#000'}}>If you are engaging in a DeFi project, buying crypto currency or moving money between wallets, always ensure you are have researched and understand what you are doing. Please be aware that you should only carry out transactions with the genuine projects, smart contracts and wallet addresses. Make sure you know where your money is going.</p>
             </Alert>

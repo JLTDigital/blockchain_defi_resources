@@ -61,6 +61,9 @@ const EthereumView = () => {
             Smart contracts are typically written in the programming language Solidity, which is the most popular as well as Vyper, a lanuguage based off the Python language.
             </p>
           </div>
+          <div className='text-center mt-5'>
+          <a href='https://blockgeeks.com/graphics/'><img className='blockchain-img' src='https://blockgeeks.com/wp-content/uploads/2019/05/smartcontractexplainer.jpg' alt='How Smart Contracts Work' border='0' /></a>
+          </div>
         </Col>
         <Col md={12} className='p-4'>
           <div className='wrapper'>
@@ -77,6 +80,9 @@ const EthereumView = () => {
             <LinkContainer to='/dapps'>
               <button className='btn btn-danger home-link'>DApps</button>
             </LinkContainer>
+          </div>
+          <div className='text-center mt-5'>
+            <a href='https://blockgeeks.com/graphics/'><img className='blockchain-img' src='https://blockgeeks.com/wp-content/uploads/2019/05/developingonethereum.jpg' alt='Ethereum Dapps' border='0' /></a>
           </div>
         </Col>
         <Col md={12} className='p-4'>

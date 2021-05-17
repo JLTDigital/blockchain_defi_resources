@@ -1,7 +1,8 @@
 import React from 'react'
 import Hero from '../components/Hero'
+import MainCard from '../components/MainCard'
 import DeFi from '../assets/Defi.jpeg'
-import { Row, Col, Card } from 'react-bootstrap'
+import { Row, Col } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 
 const DefiView = () => {
@@ -10,7 +11,7 @@ const DefiView = () => {
       <Hero heading='DeFi' para='Decentralised Finance.' />
 
       <Row className='mt-1'>
-          <Col md={12} className='p-4'>
+          <Col md={12} className='px-5'>
             <div className='wrapper'>
               <h3 style={{ color: '#03ffc5'}}>What is Decentralised Finance (DeFi)</h3>
               <p>
@@ -18,7 +19,7 @@ const DefiView = () => {
               </p>
             </div>
           </Col>
-          <Col md={12} className='p-4'>
+          <Col md={12} className='px-5'>
             <div className='wrapper'>
               <h3 style={{ color: '#03ffc5'}}>The purpose of DeFi</h3>
               <p>
@@ -26,7 +27,7 @@ const DefiView = () => {
               </p>
             </div>
           </Col>
-          <Col md={12} className='p-4'>
+          <Col md={12} className='px-5'>
             <div className='wrapper'>
               <h3 style={{ color: '#03ffc5'}}>What can DeFi be used for</h3>
               <ul>
@@ -45,7 +46,7 @@ const DefiView = () => {
               <button className='btn btn-danger home-link'>DApps</button>
             </LinkContainer>
           </Col>
-          <Col md={12} className='p-4'>
+          <Col md={12} className='px-5'>
             <div className='wrapper'>
               <h3 style={{ color: '#03ffc5'}}>Advantages of DeFi</h3>
               <ul>
@@ -64,7 +65,7 @@ const DefiView = () => {
               </ul>
             </div>
           </Col>
-          <Col md={12} className='p-4'>
+          <Col md={12} className='px-5'>
             <div className='wrapper'>
               <h3 style={{ color: '#03ffc5'}}>Disadvantages of DeFi</h3>
               <ul>
@@ -88,25 +89,13 @@ const DefiView = () => {
           </Col>
 
           <Row className='mt-2'>
-            <Col md={12} className='p-4 text-center'>
+            <Col md={12} className='px-4 text-center'>
               <div className='wrapper'>
                 <h3 style={{ color: '#03ffc5'}}>Check out my article on Medium for a more information on DeFi</h3>
               </div>
             </Col>
             <Col md={12} className='p-4'>
-              <div className="card-wrapper align-items-center">
-                <Card style={{ width: '18rem' }}>
-                  <a href="https://johnny-taft.medium.com/defi-b102486a216c">
-                    <Card.Img variant="top" src={DeFi}/>
-                    <Card.Body>
-                      <Card.Title>DeFi</Card.Title>
-                      <Card.Text style={{ color: '#000'}}>
-                        The Decentralised Finance future is starting now…
-                      </Card.Text>
-                    </Card.Body>
-                  </a>
-                </Card> 
-              </div>
+              <MainCard title='DeFi' text='The Decentralised Finance future is starting now…' image={DeFi} link='https://johnny-taft.medium.com/defi-b102486a216c' />
             </Col>
           </Row>
         </Row>

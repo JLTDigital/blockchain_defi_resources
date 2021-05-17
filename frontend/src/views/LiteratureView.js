@@ -27,7 +27,7 @@ const LiteratureView = () => {
       {!literatures? (<Loader />) : (
         <Row className='mt-3'>
           {literatures.map(literature => (
-            <Col key={literature._id} className='p2' md={12}>
+            <Col key={literature._id} className='px-4' md={12}>
               <div className='main-card mt-5 mb-3 p-2'>
                 <a href={literature.url} className='card-link'>
                   <img className='mr-3' src={literature.image} alt=""/>

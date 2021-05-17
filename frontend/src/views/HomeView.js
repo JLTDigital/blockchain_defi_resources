@@ -49,8 +49,8 @@ const HomeView = () => {
       <section className='home-section-3 mt-5'>
         <h3 className='text-center'>Get Started...</h3>
         <Row className='p-3'>
-          <Col md={4}>
-            <div className="home-card">
+          <Col lg={4}>
+            <div className="home-card mb-3">
               <h6>1. Get some Crypto</h6>
               <p>Visit one these exchanges and purchase your cryptocurrency.</p>
               <LinkContainer to='/exchanges'>
@@ -58,8 +58,8 @@ const HomeView = () => {
               </LinkContainer>
             </div>
           </Col>
-          <Col md={4}>
-            <div className="home-card">
+          <Col lg={4}>
+            <div className="home-card mb-3">
               <h6>2. Get a wallet</h6>
               <p>Get a hardsware or software wallet to hold your tokens.</p>
               <LinkContainer to='/wallets'>
@@ -67,8 +67,8 @@ const HomeView = () => {
               </LinkContainer>
             </div>
           </Col>
-          <Col md={4}>
-            <div className="home-card">
+          <Col lg={4}>
+            <div className="home-card mb-3">
               <h6>3. Get stuck in</h6>
               <p>Vist some of these applications and have a look around</p>
               <LinkContainer to='/dapps'>
@@ -81,13 +81,13 @@ const HomeView = () => {
 
       <section className='home-section-4 mt-5'>
         <Row>
-          <Col md={6} className='p-3'>
+          <Col lg={12} className='p-3'>
             <Alert style={{ background: '#03ffc5'}} className='p-5'>
               <h4 style={{ color: '#000'}}>Updates</h4>
               <p style={{ color: '#000'}}>This site will be updated as frequently as possible with new information and links. Please note this will not be an exhustive list containing every project and token in the space. The goal is to give you solid information so that you can find your way to start with. It is then up to you to dig deeper and learn.</p>
             </Alert>
           </Col> 
-          <Col md={6} className='p-3'>
+          <Col lg={12} className='p-3'>
             <Alert style={{ background: '#FF2A6D'}} className='p-5'>
               <h4 style={{ color: '#000'}}>Remember...</h4>
               <p style={{ color: '#000'}}>If you are engaging in a DeFi project, buying crypto currency or moving money between wallets, always ensure you are have researched and understand what you are doing. Please be aware that you should only carry out transactions with the genuine projects, smart contracts and wallet addresses. Make sure you know where your money is going.</p>

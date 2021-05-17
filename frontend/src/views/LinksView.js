@@ -28,7 +28,7 @@ const LinksView = () => {
       {!links ? (<Loader />) : (
         <Row className='mt-3'>
           {links.map(link => (
-            <Col key={link._id} className='p2' md={12}>
+            <Col key={link._id} className='px-4' md={12}>
               <div className='main-card mt-5 mb-3 p-2'>
                 <a href={link.url} className='card-link'>
                   <img className='mr-3' src={link.image} alt=""/>

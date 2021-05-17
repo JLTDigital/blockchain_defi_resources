@@ -27,7 +27,7 @@ const DeveloperView = () => {
       {!developers ? (<Loader />) : (
         <Row className='mt-3'>
           {developers.map(developer => (
-            <Col key={developer._id} className='p2' md={12}>
+            <Col key={developer._id} className='px-4' md={12}>
               <div className='main-card mt-5 mb-3 p-2'>
                 <a href={developer.url} className='card-link'>
                   <img className='mr-3' src={developer.image} alt=""/>

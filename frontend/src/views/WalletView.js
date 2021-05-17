@@ -32,7 +32,7 @@ const WalletView = () => {
       {!wallets ? (<Loader />) : (
         <Row className='mt-3'>
           {wallets.map(wallet => (
-            <Col key={wallet._id} className='p2' md={12}>
+            <Col key={wallet._id} className='px-4' md={12}>
               <div className='main-card mt-5 mb-3 p-2'>
                 <a href={wallet.url} className='card-link'>
                   <img className='mr-3' src={wallet.image} alt=""/>

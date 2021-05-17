@@ -1,9 +1,10 @@
 import React from 'react'
 import Eth from '../assets/ethereum.png'
 import Hero from '../components/Hero'
+import MainCard from '../components/MainCard'
 import { VFXImg } from 'react-vfx'
 import CryptoPunks from '../assets/cryptopunks.jpg'
-import { Col, Row, Card } from 'react-bootstrap'
+import { Col, Row } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 import { BiLinkExternal } from 'react-icons/bi'
 
@@ -27,7 +28,7 @@ const EthereumView = () => {
     </Row>
 
     <Row className='mt-1'>
-        <Col md={12} className='p-4'>
+        <Col md={12} className='px-5'>
           <div className='wrapper'>
             <h3 style={{ color: '#03ffc5'}}>Ethereum</h3>
             <p>
@@ -38,7 +39,7 @@ const EthereumView = () => {
             </p>
           </div>
         </Col>
-        <Col md={12} className='p-4'>
+        <Col md={12} className='px-5'>
           <div className='wrapper'>
             <h3 style={{ color: '#03ffc5'}}>Ethereum Virtual Machine (EMV)</h3>
             <p>
@@ -51,7 +52,7 @@ const EthereumView = () => {
             </p>
           </div>
         </Col>
-        <Col md={12} className='p-4'>
+        <Col md={12} className='px-5'>
           <div className='wrapper'>
             <h3 style={{ color: '#03ffc5'}}>Smart Contracts</h3>
             <p>
@@ -65,7 +66,7 @@ const EthereumView = () => {
           <a href='https://blockgeeks.com/graphics/'><img className='blockchain-img' src='https://blockgeeks.com/wp-content/uploads/2019/05/smartcontractexplainer.jpg' alt='How Smart Contracts Work' border='0' /></a>
           </div>
         </Col>
-        <Col md={12} className='p-4'>
+        <Col md={12} className='px-5'>
           <div className='wrapper'>
             <h3 style={{ color: '#03ffc5'}}>Dapps</h3>
             <p>
@@ -85,7 +86,7 @@ const EthereumView = () => {
             <a href='https://blockgeeks.com/graphics/'><img className='blockchain-img' src='https://blockgeeks.com/wp-content/uploads/2019/05/developingonethereum.jpg' alt='Ethereum Dapps' border='0' /></a>
           </div>
         </Col>
-        <Col md={12} className='p-4'>
+        <Col md={12} className='px-5'>
           <div className='wrapper'>
             <h3 style={{ color: '#03ffc5'}}>Non-Fungible Tokens (NFTs)</h3>
             <p>
@@ -105,25 +106,13 @@ const EthereumView = () => {
       </Row>
 
       <Row className='mt-2'>
-          <Col md={12} className='p-4 text-center'>
+          <Col md={12} className='px-4 text-center'>
             <div className='wrapper'>
               <h3 style={{ color: '#03ffc5'}}>Check out my article on Medium for a more information on NFTS</h3>
             </div>
           </Col>
           <Col md={12} className='p-4'>
-            <div className="card-wrapper align-items-center">
-              <Card style={{ width: '18rem' }}>
-                <a href="https://johnny-taft.medium.com/nfts-what-are-they-all-about-67e53dc71156">
-                  <Card.Img variant="top" src={CryptoPunks}/>
-                  <Card.Body>
-                    <Card.Title>NFTs</Card.Title>
-                    <Card.Text style={{ color: '#000'}}>
-                      NFTs. What are they all about?
-                    </Card.Text>
-                  </Card.Body>
-                </a>
-              </Card> 
-            </div>
+            <MainCard title='NFTs' text='NFTs. What are they all about?' image={CryptoPunks} link='https://johnny-taft.medium.com/nfts-what-are-they-all-about-67e53dc71156' />
           </Col>
       </Row>
     </>

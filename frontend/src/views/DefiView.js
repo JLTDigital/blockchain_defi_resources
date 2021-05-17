@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from '../components/Hero'
 import DeFi from '../assets/Defi.jpeg'
 import { Row, Col, Card } from 'react-bootstrap'
+import { LinkContainer } from 'react-router-bootstrap'
 
 const DefiView = () => {
   return (
@@ -40,6 +41,9 @@ const DefiView = () => {
                 </li>
               </ul>
             </div>
+            <LinkContainer to='/dapps'>
+              <button className='btn btn-danger home-link'>DApps</button>
+            </LinkContainer>
           </Col>
           <Col md={12} className='p-4'>
             <div className='wrapper'>

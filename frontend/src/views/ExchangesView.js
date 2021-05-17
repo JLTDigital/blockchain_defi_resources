@@ -11,6 +11,7 @@ const ExchangesView = () => {
   const [error, setError] = useState('')
 
   useEffect(() => {
+    onRender()
     getExchanges()
   }, [])
   
@@ -21,10 +22,14 @@ const ExchangesView = () => {
     .catch(error => setError(error))
   }
 
+  const onRender = () => {
+    window.scrollTo(0, 0)
+  }
+
   return (
     <>
       <Hero heading='Exchanges' para='Best places to make your crypto purchases, trades, loans and build some crypto savings.' />
-       {!exchanges ? (<Loader />) : (
+      {!exchanges ? (<Loader />) : (
         <Row className='mt-3'>
           {exchanges.map(exchange => (
             <Col key={exchange._id} className='p2' md={12}>
@@ -40,8 +45,8 @@ const ExchangesView = () => {
             </Col>  
           ))}
         </Row>
-       )}
-       {error ? (<Message>{error}</Message>) : ''}
+      )}
+      {error ? (<Message>{error}</Message>) : ''}
     </>
   )
 }

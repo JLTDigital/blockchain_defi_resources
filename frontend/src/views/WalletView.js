@@ -11,6 +11,7 @@ const WalletView = () => {
   const [error, setError] = useState('')
 
   useEffect(() => {
+    onRender()
     getWallets()
   }, [])
   
@@ -19,6 +20,10 @@ const WalletView = () => {
     .then(response => response.data)
     .then(data => setWallets(data))
     .catch(error => setError(error))
+  }
+
+  const onRender = () => {
+    window.scrollTo(0, 0)
   }
 
   return (

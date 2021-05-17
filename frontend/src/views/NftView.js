@@ -11,6 +11,7 @@ const NftView = () => {
   const [error, setError] = useState('')
 
   useEffect(() => {
+    onRender()
     getNfts()
   }, [])
   
@@ -19,6 +20,10 @@ const NftView = () => {
     .then(response => response.data)
     .then(data => setNfts(data))
     .catch(error => setError(error))
+  }
+
+  const onRender = () => {
+    window.scrollTo(0, 0)
   }
 
   return (

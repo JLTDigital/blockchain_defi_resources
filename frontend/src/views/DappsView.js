@@ -11,6 +11,7 @@ const DappsView = () => {
   const [error, setError] = useState('')
 
   useEffect(() => {
+    onRender()
     getDapps()
   }, [])
   
@@ -19,6 +20,10 @@ const DappsView = () => {
     .then(response => response.data)
     .then(data => setDapps(data))
     .catch(error => setError(error))
+  }
+
+  const onRender = () => {
+    window.scrollTo(0, 0)
   }
 
   return (

@@ -49,6 +49,13 @@ const developer = [
     image: "https://blockchaindefiresources.s3.eu-west-2.amazonaws.com/truffle.png"
   },
   {
+    name: "Remix IDE",
+    description: "Remix IDE is an open source web and desktop application. Remix IDE is part of the Remix Project which is a platform for development tools that use a plugin architecture. Remix IDE is a powerful open source tool that helps you write Solidity contracts straight from the browser",
+    url: "http://remix.ethereum.org/#optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.3+commit.8d00100c.js",
+    category: "Developer",
+    image: "https://blockchaindefiresources.s3.eu-west-2.amazonaws.com/remix.jpg"
+  },
+  {
     name: "Web3",
     description: "web3.js is a collection of libraries that allow you to interact with a local or remote ethereum node using HTTP, IPC or WebSocket",
     url: "https://web3js.readthedocs.io/en/v1.3.4/",

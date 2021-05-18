@@ -35,11 +35,11 @@ const dapps = [
     image: "https://blockchaindefiresources.s3.eu-west-2.amazonaws.com/synthetix.png"
   },
   {
-    name: "AutoFarm",
-    description: "Defi suite for automated Yield farming.",
-    url: "https://autofarm.network/",
+    name: "PancakeSwap",
+    description: "PancakeSwap, the leading DEX on Binance Smart Chain (BSC) with the best farms in DeFi and a lottery for CAKE",
+    url: "https://pancakeswap.finance/",
     category: "DeFi",
-    image: "https://blockchaindefiresources.s3.eu-west-2.amazonaws.com/autoFarmLogo.png"
+    image: "https://blockchaindefiresources.s3.eu-west-2.amazonaws.com/pancakeSwap.png"
   },
   {
     name: "CryptoVoxels",

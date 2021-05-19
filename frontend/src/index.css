@@ -111,6 +111,7 @@ button {
 
 .main-card img {
   width: 20%;
+  max-height: 210px;
 }
 
 .card-wrapper {

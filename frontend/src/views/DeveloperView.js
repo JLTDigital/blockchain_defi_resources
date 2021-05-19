@@ -3,7 +3,7 @@ import Hero from '../components/Hero'
 import axios from 'axios'
 import Loader from '../components/Loader'
 import Message from '../components/Message'
-import { Row, Col } from 'react-bootstrap'
+import { Row, Col, Image } from 'react-bootstrap'
 
 const DeveloperView = () => {
 
@@ -30,7 +30,7 @@ const DeveloperView = () => {
             <Col key={developer._id} className='px-4' md={12}>
               <div className='main-card mt-5 mb-3 p-2'>
                 <a href={developer.url} className='card-link'>
-                  <img className='mr-3' src={developer.image} alt=""/>
+                  <Image className='mr-3' src={developer.image} alt="" fluid='true'/>
                   <div className='card-wrapper'>
                     <h3>{developer.name}</h3>
                     <p>{developer.description}</p>

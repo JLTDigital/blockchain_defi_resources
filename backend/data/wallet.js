@@ -1,23 +1,16 @@
 const wallet = [
   {
-    name: "Ledger Nano S",
-    description: "The original hardware wallet. Easily start your crypto journey: buy crypto, secure your assets and manage them in one single-app",
-    url: "https://shop.ledger.com/products/ledger-nano-s",
-    image: "https://blockchaindefiresources.s3.eu-west-2.amazonaws.com/legerNanoS.png",
-    category: "Wallets"
-  },
-  {
-    name: "Ledger Nano X",
-    description: "Ledger Blue is the most advanced security gear on the market, also known as the Rolls Royce of cryptocurrency hardware wallets.",
-    url: "https://shop.ledger.com/pages/ledger-nano-x",
-    image: "https://blockchaindefiresources.s3.eu-west-2.amazonaws.com/ledgernanox.png",
+    name: "Ledger Nano S & X",
+    description: "The original hardware wallets. Easily start your crypto journey: buy crypto, secure your assets and manage them in one single-app. They are the most advanced security gear on the market, also known as the Rolls Royce of cryptocurrency hardware wallets",
+    url: "https://www.ledger.com/",
+    image: "https://blockchaindefiresources.s3.eu-west-2.amazonaws.com/ledgernano.png",
     category: "Wallets"
   },
   {
     name: "Trezor Model T",
     description: "The Trezor Model T is an advanced cryptocurrency hardware wallet, designed to be the master access key to all your digital assets. Store and encrypt your Bitcoin public keys, passwords and other digital tokens with confidence.",
     url: "https://trezor.io/",
-    image: "https://blockchaindefiresources.s3.eu-west-2.amazonaws.com/trezorModelt.png",
+    image: "https://blockchaindefiresources.s3.eu-west-2.amazonaws.com/trezor.png",
     category: "Wallets"
   },
   {

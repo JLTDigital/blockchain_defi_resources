@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Hero from '../components/Hero'
+import Meta from '../components/Meta'
 import axios from 'axios'
 import Loader from '../components/Loader'
 import Message from '../components/Message'
@@ -23,6 +24,7 @@ const DeveloperView = () => {
 
   return (
     <div>
+      <Meta title='Blockchain & DeFi Resources | Developers' />
       <Hero heading='Developers' para='Languages, tools and development resources to help ypu build your own Dapps and learn Blockchain development.' />
       {!developers ? (<Loader />) : (
         <Row className='mt-3'>

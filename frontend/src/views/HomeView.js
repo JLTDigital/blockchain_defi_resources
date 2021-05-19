@@ -6,10 +6,12 @@ import Cyborg1 from '../assets/cyborg1.png'
 import Cyborg2 from '../assets/cyborg2.png'
 import { VFXImg } from 'react-vfx'
 import Hero from '../components/Hero'
+import Meta from '../components/Meta'
 
 const HomeView = () => {
   return (
     <div>
+      <Meta />
       <Hero heading={'Blockchain & DeFi Resources'} para='Find your way in the Blockchain and DeFi space.'/>
       <Row>
         <Col className='p-2 mx-auto text-center'>

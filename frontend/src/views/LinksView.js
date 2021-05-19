@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Hero from '../components/Hero'
+import Meta from '../components/Meta'
 import axios from 'axios'
 import Loader from '../components/Loader'
 import Message from '../components/Message'
@@ -24,6 +25,7 @@ const LinksView = () => {
 
   return (
     <div>
+      <Meta title='Blockchain & DeFi Resources | Links' />
       <Hero heading='Links' para='An assortment of links you might find helpful.' />
       {!links ? (<Loader />) : (
         <Row className='mt-3'>

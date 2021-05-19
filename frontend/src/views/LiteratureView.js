@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Hero from '../components/Hero'
+import Meta from '../components/Meta'
 import axios from 'axios'
 import Loader from '../components/Loader'
 import Message from '../components/Message'
@@ -23,6 +24,7 @@ const LiteratureView = () => {
 
   return (
     <div>
+      <Meta title='Blockchain & DeFi Resources | Literature' />
       <Hero heading='Literature' para='Great books to help build your understanding and discover new things about Blockchain technology, Crypto and DeFi.' />
       {!literatures? (<Loader />) : (
         <Row className='mt-3'>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Hero from '../components/Hero'
+import Meta from '../components/Meta'
 import axios from 'axios'
 import Loader from '../components/Loader'
 import Message from '../components/Message'
@@ -28,6 +29,7 @@ const DappsView = () => {
 
   return (
     <div>
+      <Meta title='Blockchain & DeFi Resources | Dapps' />
       <Hero heading='Dapps' para='Decentralised Applications' />
       {!dapps? (<Loader />) : (
         <Row className='mt-3'>

@@ -13,10 +13,10 @@ const Meta = ({ title, description, author, keywords }) => {
 }
 
 Meta.defaultProps = {
-  title: 'JLTDigital | Home',
-  description: 'JLTDigital, Personal website of Jonathan Taft, Fullstack Developer',
-  author: 'Jonathan Taft',
-  keywords: 'Web Developer, Mobile Developer, Javascript, Full Stack, HTML, CSS, React, MERN, Vuejs, Nextjs, Typescript'
+  title: 'Blockchain & DeFi Resources | Home',
+  description: 'Blockchain & DeFi Resources. Curated resources for beginners in the Crypto and DeFi space. Everything from Blockchain, Ethereum to Wallets, NFTs and Games.',
+  author: 'Jonathan Taft - Full Stack Developer at JLTDigital',
+  keywords: 'Blockchain, Cryptocurrency, Crypto, Web3, Bitcoin, Ethereum, Blockchain Developer, NFT, Crypto Wallets, DeFi, Decentralised Finance'
 }
 
 export default Meta

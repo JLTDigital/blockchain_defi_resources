@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Hero from '../components/Hero'
+import Meta from '../components/Meta'
 import axios from 'axios'
 import Loader from '../components/Loader'
 import Message from '../components/Message'
@@ -23,6 +24,7 @@ const GamesView = () => {
 
   return (
     <div>
+      <Meta title='Blockchain & DeFi Resources | Games' />
       <Hero heading='Games' para='Some of the best games right now, built on blockchains.' />
       {!games? (<Loader />) : (
         <Row className='mt-3'>

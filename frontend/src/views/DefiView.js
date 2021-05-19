@@ -1,5 +1,6 @@
 import React from 'react'
 import Hero from '../components/Hero'
+import Meta from '../components/Meta'
 import MainCard from '../components/MainCard'
 import DeFi from '../assets/Defi.jpeg'
 import { Row, Col } from 'react-bootstrap'
@@ -8,8 +9,8 @@ import { LinkContainer } from 'react-router-bootstrap'
 const DefiView = () => {
   return (
     <div>
+      <Meta title='Blockchain & DeFi Resources | DeFi' />
       <Hero heading='DeFi' para='Decentralised Finance.' />
-
       <Row className='mt-1'>
           <Col md={12} className='px-5'>
             <div className='wrapper'>

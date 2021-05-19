@@ -1,5 +1,6 @@
 import React from 'react'
 import Hero from '../components/Hero'
+import Meta from '../components/Meta'
 import MainCard from '../components/MainCard'
 import BlockchainArt from '../assets/blockchainArt.jpg'
 import { Col, Row } from 'react-bootstrap'
@@ -7,8 +8,8 @@ import { Col, Row } from 'react-bootstrap'
 const BlockchainView = () => {
   return (
     <>
+      <Meta title='Blockchain & DeFi Resources | Blockchain'  />
       <Hero heading='Blockchain' />
-
       <Row className='mt-2'>
           <Col md={12} className='px-5'>
             <div className='wrapper'>

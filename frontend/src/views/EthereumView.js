@@ -1,6 +1,7 @@
 import React from 'react'
 import Eth from '../assets/ethereum.png'
 import Hero from '../components/Hero'
+import Meta from '../components/Meta'
 import MainCard from '../components/MainCard'
 import { VFXImg } from 'react-vfx'
 import CryptoPunks from '../assets/cryptopunks.jpg'
@@ -12,8 +13,8 @@ import { BiLinkExternal } from 'react-icons/bi'
 const EthereumView = () => {
   return (
   <>
+    <Meta title='Blockchain & DeFi Resources | Ethereum' />
     <Hero heading='Ethereum' />
-
     <Row>
       <Col md={12} className='p-4 text-center'>
         <VFXImg shader='rgbGlitch' className='ethereum' src={Eth} alt="Ethereum"/>

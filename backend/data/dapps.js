@@ -42,6 +42,20 @@ const dapps = [
     image: "https://blockchaindefiresources.s3.eu-west-2.amazonaws.com/pancakeSwap.png"
   },
   {
+    name: "Wault Finance",
+    description: "Wault Finance is a decentralized finance hub that connects all of the primary DeFi use-cases within one simple ecosystem, on the Binance Smart Chain. In short, an all-in-one DeFi Platform!",
+    url: "https://wault.finance/?utm_source=DappRadar&utm_medium=deeplink&utm_campaign=visit-website",
+    category: "DeFi",
+    image: "https://blockchaindefiresources.s3.eu-west-2.amazonaws.com/WaultFinance.png"
+  },
+  {
+    name: "Curve Finance",
+    description: "Curve is an exchange liquidity pool on Ethereum designed for: extremely efficient stablecoin trading, low risk, supplemental fee income for liquidity providers",
+    url: "https://curve.fi/",
+    category: "DeFi",
+    image: "https://blockchaindefiresources.s3.eu-west-2.amazonaws.com/curveFinance.png"
+  },
+  {
     name: "CryptoVoxels",
     description: "Cryptovoxels is a virtual world powered by the Ethereum blockchain. Players can buy land and build stores and art galleries. Editing tools, avatars and text chat are built in",
     url: "https://www.cryptovoxels.com/",

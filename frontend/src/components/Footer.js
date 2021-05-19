@@ -15,7 +15,7 @@ const Footer = () => {
           <Col md={6} className='p-2 mt-2 text-center'>
             <small>Built by JLTDigital - Fullstack Developer</small>
             <br/>
-            <small>Any issues with any links: <a href="https://github.com/JLTDigital/blockchain_defi_resources">
+            <small>Issues: <a href="https://github.com/JLTDigital/blockchain_defi_resources">
               <BiLinkExternal color='#000' />
             </a> 
             </small>

@@ -21,6 +21,20 @@ const wallet = [
     category: "Wallets"
   },
   {
+    name: "Metamask",
+    description: "A crypto wallet & gateway to blockchain apps. You can explore blockchain applications in seconds through a wallet that is trusted by over 1 million users worldwide",
+    url: "https://metamask.io/",
+    image: "https://blockchaindefiresources.s3.eu-west-2.amazonaws.com/metamask.png",
+    category: "Wallets"
+  },
+  {
+    name: "Exodus Wallet",
+    description: "Send, receive & exchange Bitcoin and 100+ cryptocurrencies with ease on the world's leading Desktop, Mobile and Hardware crypto wallets",
+    url: "https://www.exodus.com/",
+    image: "https://blockchaindefiresources.s3.eu-west-2.amazonaws.com/exodus.png",
+    category: "Wallets"
+  },
+  {
     name: "Coinomi",
     description: "Securely store, manage and exchange Bitcoin, Ethereum, and more than 1,770 other blockchain assets.",
     url: "https://www.coinomi.com/en/",

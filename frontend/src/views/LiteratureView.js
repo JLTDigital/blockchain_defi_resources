@@ -34,6 +34,7 @@ const LiteratureView = () => {
                   <div className='card-wrapper'>
                     <h3>{literature.name}</h3>
                     <p>{literature.description}</p>
+                    <p>Author: {literature.author}</p>
                   </div>
                 </a>
               </div>

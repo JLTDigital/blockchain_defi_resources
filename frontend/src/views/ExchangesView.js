@@ -4,7 +4,7 @@ import Hero from '../components/Hero'
 import Meta from '../components/Meta'
 import Loader from '../components/Loader'
 import Message from '../components/Message'
-import { Row, Col } from 'react-bootstrap'
+import { Row, Col, Image } from 'react-bootstrap'
 
 const ExchangesView = () => {
 
@@ -37,7 +37,7 @@ const ExchangesView = () => {
             <Col key={exchange._id} className='px-4' md={12}>
               <div className='main-card mt-5 mb-3 p-2'>
                 <a href={exchange.url} className='card-link'>
-                  <img className='mr-3' src={exchange.image} alt=""/>
+                  <Image className='mr-3' src={exchange.image} alt="Exchanges" fluid='true' />
                   <div className='card-wrapper'>
                     <h3>{exchange.name}</h3>
                     <p>{exchange.description}</p>

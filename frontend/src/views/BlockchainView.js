@@ -3,7 +3,7 @@ import Hero from '../components/Hero'
 import Meta from '../components/Meta'
 import MainCard from '../components/MainCard'
 import BlockchainArt from '../assets/blockchainArt.jpg'
-import { Col, Row } from 'react-bootstrap'
+import { Col, Row, Image } from 'react-bootstrap'
 
 const BlockchainView = () => {
   return (
@@ -31,7 +31,7 @@ const BlockchainView = () => {
             </div>
             <div className='text-center mt-5'>
               <a href='https://blockgeeks.com/graphics/'>
-                <img className='blockchain-img' src='https://blockgeeks.com/wp-content/uploads/2019/05/transactioncycle.jpg' alt='Transaction Cycle' border='0' />
+                <Image className='blockchain-img' src='https://blockgeeks.com/wp-content/uploads/2019/05/transactioncycle.jpg' alt='Transaction Cycle' border='0' fluid='true' />
               </a>
             </div>
           </Col>
@@ -70,7 +70,7 @@ const BlockchainView = () => {
             </div>
             <div className='text-center mt-3'>
             Please include attribution to www.blockgeeks.com  with this graphic.
-              <a href='https://blockgeeks.com/graphics/'><img className='blockchain-img' src='https://blockgeeks.com/wp-content/uploads/2019/05/opensthedoor.jpg' alt='Blockchain Technological Possibility' border='0' /></a>
+              <a href='https://blockgeeks.com/graphics/'><Image className='blockchain-img' src='https://blockgeeks.com/wp-content/uploads/2019/05/opensthedoor.jpg' alt='Blockchain Technological Possibility' border='0' fluid='true' /></a>
             </div>
           </Col>
           <Col md={12} className='px-5'>
@@ -91,7 +91,7 @@ const BlockchainView = () => {
             </div>
             <div className='text-center mt-3'>
             Please include attribution to www.blockgeeks.com  with this graphic.
-            <p><a href='https://blockgeeks.com/graphics/'><img className='blockchain-img' src='https://blockgeeks.com/wp-content/uploads/2019/05/web3.0blockchainbusiness.jpg' alt='Web 3 and Blockchain Businesses' border='0' /></a>
+            <p><a href='https://blockgeeks.com/graphics/'><Image className='blockchain-img' src='https://blockgeeks.com/wp-content/uploads/2019/05/web3.0blockchainbusiness.jpg' alt='Web 3 and Blockchain Businesses' border='0' fluid='true' /></a>
             </p>
             </div>
           </Col> 

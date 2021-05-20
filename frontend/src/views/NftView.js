@@ -4,7 +4,7 @@ import Meta from '../components/Meta'
 import axios from 'axios'
 import Loader from '../components/Loader'
 import Message from '../components/Message'
-import { Row, Col } from 'react-bootstrap'
+import { Row, Col, Image } from 'react-bootstrap'
 
 const NftView = () => {
 
@@ -37,7 +37,7 @@ const NftView = () => {
             <Col key={nft._id} className='px-4' md={12}>
               <div className='main-card mt-5 mb-3 p-2'>
                 <a href={nft.url} className='card-link'>
-                  <img className='mr-3' src={nft.image} alt=""/>
+                  <Image className='mr-3' src={nft.image} alt="NFT" fluid='true' />
                   <div className='card-wrapper'>
                     <h3>{nft.name}</h3>
                     <p>{nft.description}</p>

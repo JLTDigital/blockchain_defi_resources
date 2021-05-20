@@ -32,7 +32,7 @@ const DeveloperView = () => {
             <Col key={developer._id} className='px-4' md={12}>
               <div className='main-card mt-5 mb-3 p-2'>
                 <a href={developer.url} className='card-link'>
-                  <Image className='mr-3' src={developer.image} alt="" fluid='true'/>
+                  <Image className='mr-3' src={developer.image} alt="developer" fluid='true'/>
                   <div className='card-wrapper'>
                     <h3>{developer.name}</h3>
                     <p>{developer.description}</p>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, Row, Alert } from 'react-bootstrap'
+import { Col, Row, Alert, Image } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 import BlockchainDeFiImg from '../assets/blockchainDefi.png'
 import Cyborg1 from '../assets/cyborg1.png'
@@ -29,7 +29,7 @@ const HomeView = () => {
             </div>
           </Col>
           <Col md={6} className='p-2 text-center'>
-            <img className='home-section-img' src={Cyborg1} alt="New to this space."/>
+            <Image className='home-section-img' src={Cyborg1} alt="New to this space." fluid='true' />
           </Col>
         </Row>
       </section>
@@ -37,7 +37,7 @@ const HomeView = () => {
       <section className='home-section-2'>
         <Row className='home-section-2'>
           <Col md={6} className='p-2 text-center'>
-            <img className='home-section-img' src={Cyborg2} alt="New to this space."/>
+            <Image className='home-section-img' src={Cyborg2} alt="New to this space." fluid='true' />
           </Col>
           <Col md={6} className='p-4'>
             <div className='wrapper'>

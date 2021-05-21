@@ -17,7 +17,7 @@ const NftView = () => {
   }, [])
   
   const getNfts = async () => {
-    await axios.get('https://blockchaindefi.herokuapp.com//api/defi/nft')
+    await axios.get('/api/defi/nft')
     .then(response => response.data)
     .then(data => setNfts(data))
     .catch(error => setError(error))

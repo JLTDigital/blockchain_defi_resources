@@ -16,7 +16,7 @@ const DeveloperView = () => {
   }, [])
   
   const getDevelopers = async () => {
-    await axios.get('https://blockchaindefi.herokuapp.com//api/developer')
+    await axios.get('/api/developer')
     .then(response => response.data)
     .then(data => setDevelopers(data))
     .catch(error => setError(error))

@@ -17,7 +17,7 @@ const ExchangesView = () => {
   }, [])
   
   const getExchanges = async () => {
-    await axios.get('https://blockchaindefi.herokuapp.com//api/exchanges')
+    await axios.get('/api/exchanges')
     .then(response => response.data)
     .then(data => setExchanges(data))
     .catch(error => setError(error))

@@ -17,7 +17,7 @@ const LinksView = () => {
   }, [])
   
   const getLinks = async () => {
-    await axios.get('https://blockchaindefi.herokuapp.com//api/links')
+    await axios.get('/api/links')
     .then(response => response.data)
     .then(data => setLinks(data))
     .catch(error => setError(error))

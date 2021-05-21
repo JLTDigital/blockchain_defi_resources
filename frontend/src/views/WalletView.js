@@ -17,7 +17,7 @@ const WalletView = () => {
   }, [])
   
   const getWallets = async () => {
-    await axios.get('https://blockchaindefi.herokuapp.com//api/wallets')
+    await axios.get('/api/wallets')
     .then(response => response.data)
     .then(data => setWallets(data))
     .catch(error => setError(error))

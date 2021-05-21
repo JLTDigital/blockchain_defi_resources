@@ -16,7 +16,7 @@ const LiteratureView = () => {
   }, [])
   
   const getLiterature = async () => {
-    await axios.get('https://blockchaindefi.herokuapp.com//api/literature')
+    await axios.get('/api/literature')
     .then(response => response.data)
     .then(data => setLiteratures(data))
     .catch(error => setError(error))

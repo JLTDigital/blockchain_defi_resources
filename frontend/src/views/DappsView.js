@@ -17,7 +17,7 @@ const DappsView = () => {
   }, [])
   
   const getDapps = async () => {
-    await axios.get('https://blockchaindefi.herokuapp.com//api/defi/dapps')
+    await axios.get('/api/defi/dapps')
     .then(response => response.data)
     .then(data => setDapps(data))
     .catch(error => setError(error))

@@ -28,7 +28,6 @@ if(process.env.NODE_ENV === 'development') {
 
 app.use(express.json())
 
-
 app.use('/api/defi', dappsRoutes)
 app.use('/api', developerRoutes)
 app.use('/api', exchangesRoutes)

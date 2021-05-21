@@ -36,7 +36,7 @@ const WalletView = () => {
           {wallets.map(wallet => (
             <Col key={wallet._id} className='px-4' md={12}>
               <div className='main-card mt-5 mb-3 p-2'>
-                <a href={wallet.url} className='card-link'>
+                <a href={wallet.url} target="_blank" className='card-link'>
                   <Image className='mr-3' src={wallet.image} alt="Wallets" fluid='true' />
                   <div className='card-wrapper'>
                     <h3>{wallet.name}</h3>

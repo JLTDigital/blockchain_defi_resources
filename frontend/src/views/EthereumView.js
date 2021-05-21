@@ -21,7 +21,7 @@ const EthereumView = () => {
       </Col>
       <Col md={12} className='p-2 text-center'>
         <h6 style={{ color: '#fff' }}>You can find out more about Ethereum over on their website 
-        <a className='p-2' href="https://ethereum.org/en/">
+        <a className='p-2' target="_blank" href="https://ethereum.org/en/">
           <BiLinkExternal color='#03ffc5' />
         </a> 
         </h6>

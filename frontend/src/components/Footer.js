@@ -15,7 +15,7 @@ const Footer = () => {
           <Col md={6} className='p-2 mt-2 text-center'>
             <small>Built by JLTDigital - Fullstack Developer</small>
             <br/>
-            <small>Contact me: <a href="http://jlt.digital">
+            <small>Contact me: <a href="http://jlt.digital" target="_blank">
             <BiEnvelopeOpen color='#000' />
             </a>
             </small>

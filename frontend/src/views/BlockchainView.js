@@ -30,7 +30,7 @@ const BlockchainView = () => {
               </p>
             </div>
             <div className='text-center mt-5'>
-              <a href='https://blockgeeks.com/graphics/' target='_blank'>
+              <a href='https://blockgeeks.com/graphics/' target='_blank' rel="noreferrer">
                 <Image className='blockchain-img' src='https://blockgeeks.com/wp-content/uploads/2019/05/transactioncycle.jpg' alt='Transaction Cycle' border='0' fluid='true' />
               </a>
             </div>
@@ -70,7 +70,7 @@ const BlockchainView = () => {
             </div>
             <div className='text-center mt-3'>
             Please include attribution to www.blockgeeks.com  with this graphic.
-              <a href='https://blockgeeks.com/graphics/' target='_blank'><Image className='blockchain-img' src='https://blockgeeks.com/wp-content/uploads/2019/05/opensthedoor.jpg' alt='Blockchain Technological Possibility' border='0' fluid='true' /></a>
+              <a href='https://blockgeeks.com/graphics/' target='_blank' rel="noreferrer"><Image className='blockchain-img' src='https://blockgeeks.com/wp-content/uploads/2019/05/opensthedoor.jpg' alt='Blockchain Technological Possibility' border='0' fluid='true' /></a>
             </div>
           </Col>
           <Col md={12} className='px-5'>
@@ -91,7 +91,7 @@ const BlockchainView = () => {
             </div>
             <div className='text-center mt-3'>
             Please include attribution to www.blockgeeks.com  with this graphic.
-            <p><a href='https://blockgeeks.com/graphics/' target='_blank'><Image className='blockchain-img' src='https://blockgeeks.com/wp-content/uploads/2019/05/web3.0blockchainbusiness.jpg' alt='Web 3 and Blockchain Businesses' border='0' fluid='true' /></a>
+            <p><a href='https://blockgeeks.com/graphics/' target='_blank' rel="noreferrer"><Image className='blockchain-img' src='https://blockgeeks.com/wp-content/uploads/2019/05/web3.0blockchainbusiness.jpg' alt='Web 3 and Blockchain Businesses' border='0' fluid='true' /></a>
             </p>
             </div>
           </Col> 

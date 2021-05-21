@@ -36,7 +36,7 @@ const NftView = () => {
           {nfts.map(nft => (
             <Col key={nft._id} className='px-4' md={12}>
               <div className='main-card mt-5 mb-3 p-2'>
-                <a href={nft.url} target="_blank" className='card-link'>
+                <a href={nft.url} target="_blank" rel="noreferrer" className='card-link'>
                   <Image className='mr-3' src={nft.image} alt="NFT" fluid='true' />
                   <div className='card-wrapper'>
                     <h3>{nft.name}</h3>

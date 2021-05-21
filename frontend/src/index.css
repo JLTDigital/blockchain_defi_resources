@@ -136,6 +136,10 @@ button {
   .home-card {
     margin-bottom: 20px;
   }
+
+  .hero-heading {
+    font-size: 42px;
+  }
 }
 
 @media(max-width: 1024px) {

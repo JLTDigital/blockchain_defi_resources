@@ -5,7 +5,7 @@ const MainCard = ({ link, image, title, text }) => {
   return (
     <div className="card-wrapper align-items-center">
       <Card style={{ width: '18rem' }}>
-        <a target="_blank" href={link}>
+        <a target="_blank" rel="noreferrer" href={link}>
           <Card.Img variant="top" src={image}/>
           <Card.Body>
             <Card.Title>{title}</Card.Title>

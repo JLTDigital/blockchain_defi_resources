@@ -10,8 +10,7 @@
     "client": "npm run start --prefix ../frontend",
     "data:import": "node seeder",
     "data:destroy": "node seeder -d",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [
     "Blockchain",

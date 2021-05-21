@@ -64,7 +64,7 @@ const EthereumView = () => {
             </p>
           </div>
           <div className='text-center mt-5'>
-          <a href='https://blockgeeks.com/graphics/'><Image className='blockchain-img' src='https://blockgeeks.com/wp-content/uploads/2019/05/smartcontractexplainer.jpg' alt='How Smart Contracts Work' border='0' fluid='true' /></a>
+          <a href='https://blockgeeks.com/graphics/' target='_blank'><Image className='blockchain-img' src='https://blockgeeks.com/wp-content/uploads/2019/05/smartcontractexplainer.jpg' alt='How Smart Contracts Work' border='0' fluid='true' /></a>
           </div>
         </Col>
         <Col md={12} className='px-5'>
@@ -84,7 +84,7 @@ const EthereumView = () => {
             </LinkContainer>
           </div>
           <div className='text-center mt-5'>
-            <a href='https://blockgeeks.com/graphics/'><Image className='blockchain-img' src='https://blockgeeks.com/wp-content/uploads/2019/05/developingonethereum.jpg' alt='Ethereum Dapps' border='0' fluid='true' /></a>
+            <a href='https://blockgeeks.com/graphics/' target='_blank'><Image className='blockchain-img' src='https://blockgeeks.com/wp-content/uploads/2019/05/developingonethereum.jpg' alt='Ethereum Dapps' border='0' fluid='true' /></a>
           </div>
         </Col>
         <Col md={12} className='px-5'>

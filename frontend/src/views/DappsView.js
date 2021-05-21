@@ -36,7 +36,7 @@ const DappsView = () => {
           {dapps.map(dapp => (
             <Col key={dapp._id} className='px-4' md={12}>
               <div className='main-card mt-5 mb-3 p-2'>
-                <a href={dapp.url} className='card-link'>
+                <a href={dapp.url} target='_blank' className='card-link'>
                   <Image className='mr-3' src={dapp.image} alt="dapp" fluid='true' />
                   <div className='card-wrapper'>
                     <h3>{dapp.name}</h3>

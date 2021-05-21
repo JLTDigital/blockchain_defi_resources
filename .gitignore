@@ -3,6 +3,7 @@ node_modules
 /dist
 /build
 /frontend/build
+.netlify
 
 /.pnp
 .pnp.js

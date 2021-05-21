@@ -16,7 +16,7 @@ const GamesView = () => {
   }, [])
   
   const getGames = async () => {
-    await axios.get('/api/defi/games')
+    await axios.get('https://blockchaindefi.herokuapp.com//api/defi/games')
     .then(response => response.data)
     .then(data => setGames(data))
     .catch(error => setError(error))

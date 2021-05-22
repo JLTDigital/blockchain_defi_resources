@@ -2,7 +2,7 @@
 
 Curated resources for beginners in the Crypto and DeFi space. Everything from Blockchain, Ethereum to Wallets, NFTs and Games.
 
-http://www.blockchaindefiresources.com
+http://blockchaindefiresources.com
 
 # More Info
 

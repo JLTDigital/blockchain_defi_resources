@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, Row, Alert, Image } from 'react-bootstrap'
+import { Col, Row, Image } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 import BlockchainDeFiImg from '../assets/blockchainDefi.png'
 import Cyborg1 from '../assets/cyborg1.png'

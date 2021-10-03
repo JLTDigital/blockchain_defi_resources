@@ -81,7 +81,7 @@ const HomeView = () => {
         </Row>
       </section>
 
-      <section className='home-section-4 mt-5'>
+      {/* <section className='home-section-4 mt-5'>
         <Row>
           <Col lg={12} className='p-3'>
             <Alert style={{ background: '#03ffc5'}} className='p-5'>
@@ -96,7 +96,7 @@ const HomeView = () => {
             </Alert>
           </Col> 
         </Row>
-      </section>
+      </section> */}
     </div>
   )
 }

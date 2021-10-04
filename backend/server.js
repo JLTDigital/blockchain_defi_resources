@@ -1,6 +1,5 @@
 import express from 'express'
 import path from 'path'
-import { fileURLToPath } from 'url';
 import dotenv from 'dotenv'
 import colors from 'colors'
 import morgan from 'morgan'
@@ -35,8 +34,9 @@ app.use('/api', linksRoutes)
 app.use('/api', literatureRoutes)
 app.use('/api', walletRoutes)
 
+const __dirname = path.resolve()
+
 if(process.env.NODE_ENV === 'production') {
-  const __dirname = path.dirname(fileURLToPath(import.meta.url));
   app.use(express.static(path.join(__dirname, '/frontend/build')))
   
   app.get('/*', (req, res) => res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html')))

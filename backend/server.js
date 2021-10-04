@@ -37,7 +37,7 @@ app.use('/api', walletRoutes)
 
 if(process.env.NODE_ENV === 'production') {
   const __dirname = path.dirname(fileURLToPath(import.meta.url));
-  app.use(express.static(path.join(__dirname, '../frontend/build')))
+  app.use(express.static(path.join(__dirname, '/frontend/build')))
   
   app.get('/*', (req, res) => res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html')))
 } else {

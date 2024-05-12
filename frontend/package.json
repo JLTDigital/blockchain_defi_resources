@@ -15,8 +15,8 @@
     "react-icons": "^4.2.0",
     "react-router-bootstrap": "^0.25.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
-    "react-vfx": "^0.4.1",
+    "react-scripts": "^5.0.1",
+    "react-vfx": "^0.5.0",
     "web-vitals": "^1.1.1"
   },
   "scripts": {
@@ -44,7 +44,7 @@
     ]
   },
   "devDependencies": {
-    "gulp": "^4.0.2",
+    "gulp": "^5.0.0",
     "gulp-autoprefixer": "^8.0.0"
   }
 }

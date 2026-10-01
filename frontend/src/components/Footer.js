@@ -15,7 +15,7 @@ const Footer = () => {
           </Link>
           <p className='footer-meta'>
             <span>&copy; 2026</span>
-            <a href='http://jlt.digital' target='_blank' rel='noreferrer'>
+            <a href='http://jlt.digital' target='_blank' rel='noopener noreferrer'>
               Built by JLTDigital
               <BiEnvelopeOpen aria-hidden='true' />
             </a>

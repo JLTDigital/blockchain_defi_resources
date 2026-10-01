@@ -36,7 +36,7 @@ const ExchangesView = () => {
           {exchanges.map(exchange => (
             <Col key={exchange.name} md={6} xl={4} className='d-flex'>
               <div className='main-card'>
-                <a href={exchange.url} target="_blank" rel="noreferrer" className='card-link'>
+                <a href={exchange.url} target="_blank" rel="noopener noreferrer" className='card-link'>
                   <Image className='mr-3' src={exchange.image} alt="Exchanges" fluid='true' />
                   <div className='card-wrapper'>
                     <h3>{exchange.name}</h3>

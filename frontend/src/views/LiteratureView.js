@@ -31,7 +31,7 @@ const LiteratureView = () => {
           {literatures.map(literature => (
             <Col key={literature.name} md={6} xl={4} className='d-flex'>
               <div className='main-card'>
-                <a href={literature.url} target="_blank" rel="noreferrer" className='card-link'>
+                <a href={literature.url} target="_blank" rel="noopener noreferrer" className='card-link'>
                   <Image className='mr-3' src={literature.image} alt="Literature" fluid='true' />
                   <div className='card-wrapper'>
                     <h3>{literature.name}</h3>

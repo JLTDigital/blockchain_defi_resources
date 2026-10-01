@@ -8,7 +8,8 @@ import CryptoPunks from '../assets/cryptopunks.jpg'
 import { Col, Row, Image } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 import { BiLinkExternal } from 'react-icons/bi'
-
+import SmartContractsImage from '../assets/smartContract.avif'
+import DappsImage from '../assets/dappsinfo.webp'
 
 const EthereumView = () => {
   return (
@@ -21,7 +22,7 @@ const EthereumView = () => {
       </Col>
       <Col md={12} className='p-2 text-center'>
         <h6 style={{ color: '#fff' }}>You can find out more about Ethereum over on their website 
-        <a className='p-2' target="_blank" rel="noreferrer" href="https://ethereum.org/en/">
+        <a className='p-2' target="_blank" rel="noopener noreferrer" href="https://ethereum.org/en/">
           <BiLinkExternal color='#03ffc5' />
         </a> 
         </h6>
@@ -64,7 +65,7 @@ const EthereumView = () => {
             </p>
           </div>
           <div className='text-center mt-5'>
-          <a href='https://blockgeeks.com/graphics/' target='_blank' rel="noreferrer"><Image className='blockchain-img' src='https://blockgeeks.com/wp-content/uploads/2019/05/smartcontractexplainer.jpg' alt='How Smart Contracts Work' border='0' fluid='true' /></a>
+          <Image className='blockchain-img' src={SmartContractsImage} alt='How Smart Contracts Work' border='0' fluid='true' />
           </div>
         </Col>
         <Col md={12} className='px-5'>
@@ -84,7 +85,7 @@ const EthereumView = () => {
             </LinkContainer>
           </div>
           <div className='text-center mt-5'>
-            <a href='https://blockgeeks.com/graphics/' target='_blank' rel="noreferrer"><Image className='blockchain-img' src='https://blockgeeks.com/wp-content/uploads/2019/05/developingonethereum.jpg' alt='Ethereum Dapps' border='0' fluid='true' /></a>
+            <Image className='blockchain-img' src={DappsImage} alt='Ethereum Dapps' border='0' fluid='true' />
           </div>
         </Col>
         <Col md={12} className='px-5'>

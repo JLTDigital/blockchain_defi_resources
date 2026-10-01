@@ -5,7 +5,7 @@ const MainCard = ({ link, image, title, text }) => {
   return (
     <div className="feature-wrap">
       <Card className="feature-card">
-        <a className="card-link" target="_blank" rel="noreferrer" href={link}>
+        <a className="card-link" target="_blank" rel="noopener noreferrer" href={link}>
           <Card.Img variant="top" src={image} alt="" />
           <Card.Body>
             <Card.Title>{title}</Card.Title>

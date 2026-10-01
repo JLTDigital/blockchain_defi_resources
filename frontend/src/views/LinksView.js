@@ -32,7 +32,7 @@ const LinksView = () => {
           {links.map(link => (
             <Col key={link.name} md={6} xl={4} className='d-flex'>
               <div className='main-card'>
-                <a href={link.url} target="_blank" rel="noreferrer" className='card-link'>
+                <a href={link.url} target="_blank" rel="noopener noreferrer" className='card-link'>
                   <Image className='mr-3' src={link.image} alt="Links" fluid='true' />
                   <div className='card-wrapper'>
                     <h3>{link.name}</h3>

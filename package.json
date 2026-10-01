@@ -20,6 +20,9 @@
   ],
   "author": "JLTDigital",
   "license": "ISC",
+  "engines": {
+    "node": "24.x"
+  },
   "dependencies": {
     "colors": "^1.4.0",
     "cors": "^2.8.5",

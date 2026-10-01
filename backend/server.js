@@ -1,5 +1,6 @@
 import express from 'express'
 import path from 'path'
+import { fileURLToPath } from 'url'
 import dotenv from 'dotenv'
 import colors from 'colors'
 import morgan from 'morgan'
@@ -31,14 +32,24 @@ app.use('/api', linksRoutes)
 app.use('/api', literatureRoutes)
 app.use('/api', walletRoutes)
 
-const __dirname = path.resolve()
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const isVercel = process.env.VERCEL === '1'
+const publicDir = path.join(__dirname, '../public')
 
-if (!isVercel && process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '/frontend/build')))
+if (isVercel) {
+  app.use(express.static(publicDir))
+  app.get('*', (req, res, next) => {
+    if (req.path.startsWith('/api')) {
+      next()
+      return
+    }
+    res.sendFile(path.join(publicDir, 'index.html'))
+  })
+} else if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, '../frontend/build')))
 
   app.get('/*', (req, res) =>
-    res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'))
+    res.sendFile(path.resolve(__dirname, '../frontend/build/index.html'))
   )
 } else if (!isVercel) {
   app.get(['/', '/api'], (req, res) => {

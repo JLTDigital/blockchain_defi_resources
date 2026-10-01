@@ -32,10 +32,10 @@ const WalletView = () => {
       <Meta title='Blockchain & DeFi Resources | Wallets' />
       <Hero heading='Wallets' para='The best hardware and software wallets.' />
       {!wallets ? (<Loader />) : (
-        <Row className='mt-3'>
+        <Row className='resource-grid mt-4'>
           {wallets.map(wallet => (
-            <Col key={wallet._id} className='px-4' md={12}>
-              <div className='main-card mt-5 mb-3 p-2'>
+            <Col key={wallet.name} md={6} xl={4} className='d-flex'>
+              <div className='main-card'>
                 <a href={wallet.url} target="_blank" rel="noreferrer" className='card-link'>
                   <Image className='mr-3' src={wallet.image} alt="Wallets" fluid='true' />
                   <div className='card-wrapper'>

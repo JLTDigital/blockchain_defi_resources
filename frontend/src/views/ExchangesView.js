@@ -32,10 +32,10 @@ const ExchangesView = () => {
     <Meta title='Blockchain & DeFi Resources | Exchanges' />
       <Hero heading='Exchanges' para='Best places to make your crypto purchases, trades, loans and build some crypto savings.' />
       {!exchanges ? (<Loader />) : (
-        <Row className='mt-3'>
+        <Row className='resource-grid mt-4'>
           {exchanges.map(exchange => (
-            <Col key={exchange._id} className='px-4' md={12}>
-              <div className='main-card mt-5 mb-3 p-2'>
+            <Col key={exchange.name} md={6} xl={4} className='d-flex'>
+              <div className='main-card'>
                 <a href={exchange.url} target="_blank" rel="noreferrer" className='card-link'>
                   <Image className='mr-3' src={exchange.image} alt="Exchanges" fluid='true' />
                   <div className='card-wrapper'>

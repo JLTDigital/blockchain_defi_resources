@@ -44,7 +44,7 @@ const DefiView = () => {
               </ul>
             </div>
             <LinkContainer to='/dapps'>
-              <button className='btn btn-danger home-link'>DApps</button>
+              <button className='btn btn-danger home-link mt-3'>DApps</button>
             </LinkContainer>
           </Col>
           <Col md={12} className='px-5'>
@@ -92,11 +92,11 @@ const DefiView = () => {
           <Row className='mt-2'>
             <Col md={12} className='px-4 text-center'>
               <div className='wrapper'>
-                <h3 style={{ color: '#03ffc5'}}>Check out my article on Medium for a more information on DeFi</h3>
+                <h3 style={{ color: '#03ffc5'}}>Check out my article for a more information on DeFi</h3>
               </div>
             </Col>
             <Col md={12} className='p-4'>
-              <MainCard title='DeFi' text='The Decentralised Finance future is starting now…' image={DeFi} link='https://johnny-taft.medium.com/defi-b102486a216c' />
+              <MainCard title='DeFi' text='The Decentralised Finance future is starting now…' image={DeFi} link='https://jlt.digital/posts/defi' />
             </Col>
           </Row>
         </Row>

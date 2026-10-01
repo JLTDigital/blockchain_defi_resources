@@ -28,10 +28,10 @@ const LinksView = () => {
       <Meta title='Blockchain & DeFi Resources | Links' />
       <Hero heading='Links' para='An assortment of links you might find helpful.' />
       {!links ? (<Loader />) : (
-        <Row className='mt-3'>
+        <Row className='resource-grid mt-4'>
           {links.map(link => (
-            <Col key={link._id} className='px-4' md={12}>
-              <div className='main-card mt-5 mb-3 p-2'>
+            <Col key={link.name} md={6} xl={4} className='d-flex'>
+              <div className='main-card'>
                 <a href={link.url} target="_blank" rel="noreferrer" className='card-link'>
                   <Image className='mr-3' src={link.image} alt="Links" fluid='true' />
                   <div className='card-wrapper'>

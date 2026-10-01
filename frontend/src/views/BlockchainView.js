@@ -98,11 +98,11 @@ const BlockchainView = () => {
           <Row className='mt-2'>
             <Col md={12} className='px-4 text-center'>
               <div className='wrapper'>
-                <h3 style={{ color: '#03ffc5'}}>Check out my article on Medium for a more information on 5 ways Blockchains will become important.</h3>
+                <h3 style={{ color: '#03ffc5'}}>Check out my article for a more information on 5 ways Blockchains will become important.</h3>
               </div>
             </Col>
             <Col md={12} className='p-3'>
-              <MainCard title='5 Ways Blockchain Will Be Important In The Future.' text='How can Blockchain be used in the real world? Is it still important?' image={BlockchainArt} link='https://johnny-taft.medium.com/5-ways-blockchain-will-be-important-in-the-future-c9ece499e6a4' />
+              <MainCard title='5 Ways Blockchain Will Be Important In The Future.' text='How can Blockchain be used in the real world? Is it still important?' image={BlockchainArt} link='https://jlt.digital/posts/5-ways-blockchain-will-be-important-in-the-future' />
             </Col>
           </Row>
         </Row>

@@ -50,9 +50,9 @@ const HomeView = () => {
 
       <section className='home-section-3 mt-5'>
         <h3 className='text-center'>Get Started...</h3>
-        <Row className='p-3'>
+        <Row className='home-steps p-3'>
           <Col lg={4}>
-            <div className="home-card mb-3">
+            <div className="home-card">
               <h6>1. Get some Crypto</h6>
               <p>Visit one these exchanges and purchase your cryptocurrency.</p>
               <LinkContainer to='/exchanges'>
@@ -61,7 +61,7 @@ const HomeView = () => {
             </div>
           </Col>
           <Col lg={4}>
-            <div className="home-card mb-3">
+            <div className="home-card">
               <h6>2. Get a wallet</h6>
               <p>Get a hardsware or software wallet to hold your tokens.</p>
               <LinkContainer to='/wallets'>
@@ -70,7 +70,7 @@ const HomeView = () => {
             </div>
           </Col>
           <Col lg={4}>
-            <div className="home-card mb-3">
+            <div className="home-card">
               <h6>3. Get stuck in</h6>
               <p>Vist some of these applications and have a look around</p>
               <LinkContainer to='/dapps'>

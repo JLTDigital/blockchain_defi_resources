@@ -27,10 +27,10 @@ const DeveloperView = () => {
       <Meta title='Blockchain & DeFi Resources | Developers' />
       <Hero heading='Developers' para='Languages, tools and development resources to help ypu build your own Dapps and learn Blockchain development.' />
       {!developers ? (<Loader />) : (
-        <Row className='mt-3'>
+        <Row className='resource-grid mt-4'>
           {developers.map(developer => (
-            <Col key={developer._id} className='px-4' md={12}>
-              <div className='main-card mt-5 mb-3 p-2'>
+            <Col key={developer.name} md={6} xl={4} className='d-flex'>
+              <div className='main-card'>
                 <a href={developer.url} target="_blank" rel="noreferrer" className='card-link'>
                   <Image className='mr-3' src={developer.image} alt="developer" fluid='true'/>
                   <div className='card-wrapper'>

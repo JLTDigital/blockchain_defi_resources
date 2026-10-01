@@ -27,10 +27,10 @@ const GamesView = () => {
       <Meta title='Blockchain & DeFi Resources | Games' />
       <Hero heading='Games' para='Some of the best games right now, built on blockchains.' />
       {!games? (<Loader />) : (
-        <Row className='mt-3'>
+        <Row className='resource-grid mt-4'>
           {games.map(game => (
-            <Col key={game._id} className='px-4' md={12}>
-              <div className='main-card mt-5 mb-3 p-2'>
+            <Col key={game.name} md={6} xl={4} className='d-flex'>
+              <div className='main-card'>
                 <a href={game.url} target="_blank" rel="noreferrer" className='card-link'>
                   <Image className='mr-3' src={game.image} alt="Games" fluid='true' />
                   <div className='card-wrapper'>

@@ -109,11 +109,11 @@ const EthereumView = () => {
       <Row className='mt-2'>
           <Col md={12} className='px-4 text-center'>
             <div className='wrapper'>
-              <h3 style={{ color: '#03ffc5'}}>Check out my article on Medium for a more information on NFTS</h3>
+              <h3 style={{ color: '#03ffc5'}}>Check out my article for a more information on NFTS</h3>
             </div>
           </Col>
           <Col md={12} className='p-4'>
-            <MainCard title='NFTs' text='NFTs. What are they all about?' image={CryptoPunks} link='https://johnny-taft.medium.com/nfts-what-are-they-all-about-67e53dc71156' />
+            <MainCard title='NFTs' text='NFTs. What are they all about?' image={CryptoPunks} link='https://jlt.digital/posts/nfts-what-are-they-all-about' />
           </Col>
       </Row>
     </>

@@ -4,6 +4,7 @@ import { Container } from 'react-bootstrap'
 import { VFXProvider } from 'react-vfx'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import PageTransition from './components/PageTransition'
 import HomeView from './views/HomeView'
 import BlockchainView from './views/BlockchainView'
 import EthereumView from './views/EthereumView'
@@ -21,9 +22,11 @@ function App() {
   return (
     <VFXProvider>
       <Router>
+        <div className='site-shell'>
         <Header />
           <main className='py-3'>
             <Container>
+              <PageTransition>
               <Route path='/blockchain' component={BlockchainView} exact />
               <Route path='/ethereum' component={EthereumView} exact />
               <Route path='/dapps' component={DappsView} exact />
@@ -36,9 +39,11 @@ function App() {
               <Route path='/literature' component={LiteratureView} exact />
               <Route path='/wallets' component={WalletView} exact />
               <Route path='/' component={HomeView} exact />
+              </PageTransition>
             </Container>
           </main>
         <Footer />
+        </div>
       </Router>
     </VFXProvider>
   );

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "express",
+  "buildCommand": "npm run build",
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/blockchain", "destination": "/index.html" },
+    { "source": "/ethereum", "destination": "/index.html" },
+    { "source": "/dapps", "destination": "/index.html" },
+    { "source": "/defi", "destination": "/index.html" },
+    { "source": "/games", "destination": "/index.html" },
+    { "source": "/nft", "destination": "/index.html" },
+    { "source": "/developer", "destination": "/index.html" },
+    { "source": "/exchanges", "destination": "/index.html" },
+    { "source": "/links", "destination": "/index.html" },
+    { "source": "/literature", "destination": "/index.html" },
+    { "source": "/wallets", "destination": "/index.html" }
+  ]
+}

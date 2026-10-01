@@ -32,27 +32,32 @@ app.use('/api', literatureRoutes)
 app.use('/api', walletRoutes)
 
 const __dirname = path.resolve()
+const isVercel = process.env.VERCEL === '1'
 
-if (process.env.NODE_ENV === 'production') {
+if (!isVercel && process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '/frontend/build')))
 
   app.get('/*', (req, res) =>
     res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'))
   )
-} else {
+} else if (!isVercel) {
   app.get(['/', '/api'], (req, res) => {
     res.send('API is active...')
   })
 }
+
 app.use(notFound)
 
 app.use(errorHandler)
 
-const PORT = process.env.PORT || 5001
+export default app
 
-app.listen(
-  PORT,
-  console.log(
-    `Server running in ${process.env.NODE_ENV} at port ${PORT}`.blue.bold
-  )
-)
+if (!isVercel) {
+  const PORT = process.env.PORT || 5001
+
+  app.listen(PORT, () => {
+    console.log(
+      `Server running in ${process.env.NODE_ENV} at port ${PORT}`.blue.bold
+    )
+  })
+}

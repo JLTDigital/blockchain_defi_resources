@@ -1,14 +1,12 @@
 import asyncHandler from 'express-async-handler'
-import Wallet from '../schema/Wallet.js'
+import wallet from '../data/wallet.js'
 
 // @desc - Get all Wallet Links
 // @route - GET /api/wallet
 // @access - public
 export const getWallets = asyncHandler(async (req, res) => {
-  const wallets = await Wallet.find({})
-
-  if (wallets) {
-    res.json(wallets)
+  if (wallet.length) {
+    res.json(wallet)
   } else {
     res.status(404)
     throw new Error('No Wallet Resources Found')

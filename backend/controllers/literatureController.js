@@ -1,13 +1,11 @@
 import asyncHandler from 'express-async-handler'
-import Literature from '../schema/Literature.js'
+import literature from '../data/literature.js'
 
 // @desc - Get all Literature links
 // @route - GET /api/literature
 // @access - public
 export const getLiterature = asyncHandler(async (req, res) => {
-  const literature = await Literature.find({})
-
-  if (literature) {
+  if (literature.length) {
     res.json(literature)
   } else {
     res.status(404)

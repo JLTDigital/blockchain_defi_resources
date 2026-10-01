@@ -5,7 +5,6 @@ import colors from 'colors'
 import morgan from 'morgan'
 import cors from 'cors'
 import { notFound, errorHandler } from './middleware/errorMiddleware.js'
-import { database } from './db/database.js'
 import dappsRoutes from './routes/dappsRoutes.js'
 import developerRoutes from './routes/developerRoutes.js'
 import exchangesRoutes from './routes/exchangesRoutes.js'
@@ -14,8 +13,6 @@ import literatureRoutes from './routes/literatureRoutes.js'
 import walletRoutes from './routes/walletRoutes.js'
 
 dotenv.config()
-
-database()
 
 const app = express()
 
@@ -43,7 +40,7 @@ if (process.env.NODE_ENV === 'production') {
     res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'))
   )
 } else {
-  app.get('/api', (req, res) => {
+  app.get(['/', '/api'], (req, res) => {
     res.send('API is active...')
   })
 }
@@ -51,7 +48,7 @@ app.use(notFound)
 
 app.use(errorHandler)
 
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 5001
 
 app.listen(
   PORT,

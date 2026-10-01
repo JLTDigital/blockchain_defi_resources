@@ -1,13 +1,13 @@
 import asyncHandler from 'express-async-handler'
-import Dapps from '../schema/Dapps.js'
+import dapps from '../data/dapps.js'
 
 // @desc - Get all apps with DeFi Category
 // @route - GET /api/dapps/dapps
 // @access - public
 export const getDapps = asyncHandler(async (req, res) => {
-  const defi = await Dapps.find({ category: 'DeFi' })
+  const defi = dapps.filter((dapp) => dapp.category === 'DeFi')
 
-  if (defi) {
+  if (defi.length) {
     res.json(defi)
   } else {
     res.status(404)
@@ -19,9 +19,9 @@ export const getDapps = asyncHandler(async (req, res) => {
 // @route - GET /api/dapps/games
 // @access - public
 export const getGames = asyncHandler(async (req, res) => {
-  const games = await Dapps.find({ category: 'Games' })
+  const games = dapps.filter((dapp) => dapp.category === 'Games')
 
-  if (games) {
+  if (games.length) {
     res.json(games)
   } else {
     res.status(404)
@@ -33,9 +33,9 @@ export const getGames = asyncHandler(async (req, res) => {
 // @route - GET /api/dapps/nft
 // @access - public
 export const getNft = asyncHandler(async (req, res) => {
-  const nft = await Dapps.find({ category: 'NFT' })
+  const nft = dapps.filter((dapp) => dapp.category === 'NFT')
 
-  if (nft) {
+  if (nft.length) {
     res.json(nft)
   } else {
     res.status(404)
